@@ -5,7 +5,6 @@ import Home from './home.js'; // Import Home component
 import Footer from './Footer.js'; // Import Footer component
 import About from './about.js'; // Import About component (new)
 import Contact from './contact.js'; // Import Contact component (new)
-import "./app.css";
 
 
 function App() {
