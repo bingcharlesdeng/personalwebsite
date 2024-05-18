@@ -1,0 +1,86 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height for viewport */
+  background-color: #f5f5f5; /* Light background color */
+  font-family: Arial, sans-serif; /* Base font family */
+  margin: 0; /* Remove default margin */
+  padding: 0 20px; /* Add padding for content area */
+}
+
+.home-header,
+.home-main,
+.home-footer {
+  flex: 1; /* Make header, main, and footer sections grow to fill space */
+}
+
+/* Header styles */
+
+.home-header {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0; /* Remove default margin for heading */
+  font-size: 2em; /* Adjust font size for title */
+}
+
+/* Main content styles */
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Add spacing between sections */
+}
+
+.about-me,
+.projects {
+  flex: 1; /* Make sections grow to fill available space within main */
+  background-color: #fff; /* White background for sections */
+  padding: 20px; /* Add padding for content within sections */
+  border-radius: 5px; /* Add rounded corners for sections (optional) */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections (optional) */
+}
+
+h2 {
+  margin: 0; /* Remove default margin for headings */
+  font-size: 1.5em; /* Adjust font size for section titles */
+}
+
+p {
+  font-size: 1em; /* Adjust font size for paragraph text */
+  line-height: 1.5; /* Adjust line spacing for readability */
+}
+
+/* Footer styles */
+
+.home-footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #e0e0e0; /* Footer background color */
+}
+
+project {
+  display: flex; /* Make project a flexbox container */
+  align-items: center; /* Align content vertically within project */
+  margin-bottom: 20px; /* Add spacing between projects */
+}
+
+.project-image {
+  width: 150px; /* Set image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add spacing between image and text */
+  border-radius: 5px; /* Add rounded corners for image (optional) */
+}
+
+.home-main {
+  /* ... (existing styles) */
+  flex-wrap: wrap; /* Wrap projects if they overflow container width */
+  justify-content: space-between; /* Distribute projects evenly */
+}
+
+.navigation {
+  /* Existing styles */
+  align-items: center; /* Align navigation links vertically */
+}

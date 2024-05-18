@@ -1,0 +1,60 @@
+/* Base styles */
+
+.header {
+  height: 100rem; /* Adjust height as needed */
+  background-color: #f5f5f5; /* Light gray background (optional) */
+  color: #333; /* Dark text color */
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Space elements evenly */
+  align-items: flex-end; /* Align vertically to the bottom */
+  padding: 1rem 2rem; /* Add some padding */
+  background-image: url("./assets/rothko.png"); /* Replace with your logo path */
+  background-size: cover; /* Stretch image to fill container */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center; /* Center image horizontally and vertically */
+}
+
+/* Navigation styling (focused on alignment and style) */
+
+.navigation {
+  display: flex; /* Keep navigation elements inline */
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  font-family: sans-serif; /* Set a clean font family */
+}
+
+.navigation-list {
+  display: flex; /* Ensure list items are displayed inline */
+}
+
+.navigation li {
+  margin-right: 1rem; /* Add space between navigation links */
+  list-style: none;
+}
+
+.navigation a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link text color */
+  font-weight: bold; /* Add some weight to navigation text */
+  transition: color 0.3s ease; /* Add smooth hover effect */
+  padding: 0.5rem 1rem; /* Add some padding for links */
+  border-radius: 4px; /* Add subtle rounded corners */
+  background-color: #f5f5f5; /* Set link background color (optional) */
+}
+
+.navigation a:hover {
+  color: #007bff; /* Blue hover color */
+  background-color: #e0e0e0; /* Change background on hover (optional) */
+}
+
+/* Responsive Design (Optional) */
+
+@media (max-width: 768px) {
+  /* Styles for smaller screens (e.g., mobile) */
+  .header {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust header-title and navigation layout for mobile if needed */
+}

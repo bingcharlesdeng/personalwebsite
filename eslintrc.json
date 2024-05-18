@@ -1,0 +1,14 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react-hooks"],
+  "rules": {
+    "react-hooks/exhaustive-deps": {
+      // Default rule behavior (can be 'warn' or 'error')
+      "error": "warn", // Example: Set to 'warn' for temporary suppression
+      // Overrides for specific files or functions
+      "allowImplicitDependencies": [
+        // Function paths or patterns to exclude from the rule
+      ],
+    },
+  },
+}

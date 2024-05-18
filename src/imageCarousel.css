@@ -1,0 +1,42 @@
+.image-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+}
+
+.image-container {
+  display: flex; /* Arrange images horizontally */
+  width: 100%; /* Ensure container fills carousel width */
+}
+
+.carousel-image {
+  width: 100%; /* Ensure images fill container width */
+  object-fit: cover; /* Crop images to fit container */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Center buttons vertically */
+  z-index: 2; /* Ensure buttons appear above images */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White text color */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.7; /* Slightly transparent on default */
+  transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+}
+
+.carousel-button:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+.carousel-button.prev {
+  left: 0; /* Position left button */
+}
+
+.carousel-button.next {
+  right: 0; /* Position right button */
+}

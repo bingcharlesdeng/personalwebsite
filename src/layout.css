@@ -1,0 +1,14 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Optional: Set minimum height for full viewport */
+}
+
+.layout {
+  background-image: url("./assets/rothko.png"); /* Replace with your image path */
+  background-size: cover; /* Stretch image to cover the entire container */
+  background-position: center; /* Center the image within the container */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  min-height: 100vh; /* Optional: Set minimum height for full viewport */
+}

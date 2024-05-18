@@ -1,38 +1,52 @@
+/* Keep existing styles (optional) */
+
+/* New styles for Header component */
+.header {
+  display: flex; /* Enable flexbox for header layout */
+  justify-content: space-between; /* Space elements horizontally */
+}
+
+.header-title {
+  /* Adjust styles for logo/title if needed (optional) */
+}
+
+.navigation {
+  display: flex; /* Keep navigation elements inline */
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.navigation-list {
+  display: flex; /* Ensure list items are displayed inline */
+}
+
+/* Consider adjusting navigation styles for better visual appeal */
+.navigation a {
+  margin-right: 1rem; /* Add space between navigation links (optional) */
+  /* Other navigation link styles (color, font-weight, etc.) */
+}
+
+/* Responsive Design (Optional) */
+
+@media (max-width: 768px) {
+  /* Styles for smaller screens (e.g., mobile) */
+  .header {
+    /* Adjust header layout for mobile if needed */
+  }
+  /* Adjust navigation styles for mobile if needed */
+}
+
+body {
+  /* Existing styles (if any) */
+  margin: 0; /* Remove default margin from body */
+  min-height: 100vh; /* Set minimum height to viewport height */
+  display: flex; /* Allow stacking content vertically */
+  flex-direction: column; /* Stack content top to bottom */
+}
+
 .App {
-  text-align: center;
+  /* Existing styles (if any) */
+  flex: 1; /* Allow main content to fill available space */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

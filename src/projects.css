@@ -1,0 +1,169 @@
+/* Overall Project Section */
+.projects {
+  margin: 3rem auto;
+  max-width: 900px;
+  background-color: #f0f0f0; /* Light gray background with subtle texture */
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+}
+
+/* Project Heading */
+.projects-heading {
+  color: #222; /* Darker text color */
+  text-align: center;
+  margin: 1rem 0;
+  font-family: 'Playfair Display', serif; /* Elegant heading font */
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px; /* Add slight letter spacing */
+}
+
+/* Project Filters */
+.project-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.project-filters label {
+  margin-right: 1rem;
+  color: #666; /* Lighter text color for labels */
+  font-family: 'Open Sans', sans-serif; /* Clean sans-serif font for labels */
+  font-size: 0.9rem;
+  text-transform: uppercase; /* Convert labels to uppercase for emphasis */
+}
+
+/* Dropdown Menus (using .dropdown class) */
+.dropdown {
+  display: inline-block;
+  margin-right: 1rem;
+  border: none; /* Remove default border for a sleeker look */
+  background: #eee; /* Light background for dropdowns */
+  padding: 0.75rem 1.25rem; /* Increase padding for dropdowns */
+  border-radius: 20px; /* Rounded corners with a larger radius */
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif; /* Consistent font for dropdowns */
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out; /* Smooth background transition */
+}
+
+.dropdown:hover {
+  background-color: #ddd; /* Slightly darker background on hover */
+}
+
+.filter-dropdown,
+.sort-dropdown {
+  @extend .dropdown;
+}
+
+/* Select element within dropdown */
+.dropdown select {
+  border: none; /* Remove default border */
+  outline: none; /* Remove default outline */
+  background: transparent; /* Transparent background */
+  width: 100%; /* Fill dropdown width */
+  @include inherit-font-mixin; /* Sass mixin for font inheritance with compatibility */
+}
+
+/* Project Cards */
+.project {
+  background-color: #fff; /* White background for cards */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Stronger box shadow for depth */
+  border-radius: 10px; /* Larger rounded corners for cards */
+  margin-bottom: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  transition: transform 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+.project:hover {
+  transform: translateY(-5px); /* More prominent upward movement on hover */
+}
+
+/* Project Image (assuming an "image" class) */
+.project img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop image to fit container */
+  margin-bottom: 1.5rem; /* Spacing below image */
+}
+
+/* Project Title */
+.project-title {
+  font-family: 'Playfair Display', serif; /* Consistent heading font for titles */
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem; /* Smaller spacing below title */
+  color: #333; /* Darker text color for title */
+}
+
+/* Project Description */
+.project-description {
+  font-family: 'Open Sans', sans-serif; /* Consistent font for descriptions */
+  font-size: 0.9rem; /* Slightly smaller font */
+  line-height: 1.6; /* Increased line spacing for readability */
+  color: #666; /* Lighter text color for descriptions */
+  margin-bottom: 1rem; /* Spacing below description */
+}
+
+/* Project Technologies/Accomplishments (assuming a "technologies" class) */
+.technologies {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  margin-bottom: 1rem; /* Spacing below technologies */
+}
+
+.technologies span {
+  background-color: #ddd; /* Light gray background for technology tags */
+  padding: 0.75rem 1rem; /* Increased padding for tags */
+  border-radius: 10px; /* Rounded corners with a larger radius */
+  margin-right: 0.75rem; /* Increased spacing between tags */
+  font-size: 0.8rem; /* Consistent font size for tags */
+  color: #333; /* Darker text color for tags */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: background-color 0.2s ease-in-out; /* Smooth background transition */
+}
+
+.technologies span:hover {
+  background-color: #ccc; /* Slightly darker background on hover */
+}
+
+/* Project Links (assuming an "links" class) */
+.links {
+  display: flex;
+  justify-content: space-between; /* Align links horizontally */
+  align-items: center;
+}
+
+.links a {
+  color: #666; /* Lighter text color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.links a:hover {
+  color: #222; /* Darker text color on hover */
+}
+
+/* Media Queries (optional) - Example for smaller screens */
+
+@media only screen and (max-width: 768px) {
+  .projects {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+  }
+
+  .project-filters {
+    flex-direction: column; /* Stack filters vertically on small screens */
+  }
+
+  .project-filters label,
+  .project-filters select {
+    margin-bottom: 0.5rem; /* Adjust spacing for stacked filters */
+  }
+
+  .project {
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+  }
+}

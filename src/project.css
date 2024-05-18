@@ -1,0 +1,70 @@
+.project {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 15px; /* Add some padding inside the project */
+}
+
+.project img {
+  width: 150px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Add space below image */
+  /* Optional: Center image within project */
+  align-self: center;
+}
+
+.project h3 {
+  margin: 0 0 10px 0; /* Adjust top and bottom margin */
+  font-size: 18px; /* Set font size for title */
+}
+
+.project-description {
+  margin-bottom: 1.5rem; /* Add space below description */
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+.project-info {
+  display: flex; /* Maintain flex for overall info container */
+  flex-direction: column; /* Stack technologies and accomplishments vertically */
+  margin-bottom: 1rem; /* Add space below info */
+}
+
+.technologies,
+.accomplishments {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin-bottom: 5px; /* Add some space below each list */
+}
+
+.technologies li,
+.accomplishments li {
+  display: inline-block; /* Display list items inline */
+  margin-right: 10px; /* Add space between list items */
+  font-size: 14px; /* Set font size for list items */
+  color: #888; /* Set a lighter color for list items */
+}
+
+.project-meta {
+  display: flex;  /* Removed flex for meta info container */
+}
+
+.project-meta-right {
+  float: right; /* Simple right-alignment using float */
+  margin-left: 10px; /* Optional: Add some space between category and date */
+}
+
+.category,
+.date {
+  font-weight: bold; /* Make category and date labels bold */
+  font-size: 14px; /* Set font size for category and date */
+  color: #888; /* Set a lighter color for category and date */
+}
+
+.project-link {
+  text-decoration: none; /* Remove underline from link */
+  color: #007bff; /* Set link color */
+  font-weight: bold; /* Make link text bold */
+  margin-top: auto; /* Move link to the bottom */ /* Optional */
+}
