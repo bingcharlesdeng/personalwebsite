@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.d890ac89.css",
-    "main.js": "/static/js/main.fa83568d.js",
-    "static/js/453.13e9b7fa.chunk.js": "/static/js/453.13e9b7fa.chunk.js",
-    "static/media/corgi.png": "/static/media/corgi.878696b72a50cd158999.png",
-    "static/media/basquiat.png": "/static/media/basquiat.b01611c68b939a45599d.png",
-    "static/media/basquiat.webp": "/static/media/basquiat.b01611c68b939a45599d.webp",
-    "static/media/portfolio-website.png": "/static/media/portfolio-website.8fe2913c30ff81711e81.png",
-    "static/media/ecommerce-platform.png": "/static/media/ecommerce-platform.dc477690627fb1a5ca4f.png",
-    "static/media/logo.png": "/static/media/logo.3925108b50b3230d46f2.png",
-    "static/media/rothko.png": "/static/media/rothko.ef0d7651f757146f0210.png",
-    "index.html": "/index.html",
-    "main.d890ac89.css.map": "/static/css/main.d890ac89.css.map",
-    "main.fa83568d.js.map": "/static/js/main.fa83568d.js.map",
-    "453.13e9b7fa.chunk.js.map": "/static/js/453.13e9b7fa.chunk.js.map"
+    "main.css": "/personalwebsite/static/css/main.d4d07f9e.css",
+    "main.js": "/personalwebsite/static/js/main.034c0293.js",
+    "static/js/453.13e9b7fa.chunk.js": "/personalwebsite/static/js/453.13e9b7fa.chunk.js",
+    "static/media/corgi.png": "/personalwebsite/static/media/corgi.878696b72a50cd158999.png",
+    "static/media/basquiat.png": "/personalwebsite/static/media/basquiat.b01611c68b939a45599d.png",
+    "static/media/basquiat.webp": "/personalwebsite/static/media/basquiat.b01611c68b939a45599d.webp",
+    "static/media/portfolio-website.png": "/personalwebsite/static/media/portfolio-website.8fe2913c30ff81711e81.png",
+    "static/media/ecommerce-platform.png": "/personalwebsite/static/media/ecommerce-platform.dc477690627fb1a5ca4f.png",
+    "static/media/logo.png": "/personalwebsite/static/media/logo.3925108b50b3230d46f2.png",
+    "static/media/rothko.png": "/personalwebsite/static/media/rothko.ef0d7651f757146f0210.png",
+    "index.html": "/personalwebsite/index.html",
+    "main.d4d07f9e.css.map": "/personalwebsite/static/css/main.d4d07f9e.css.map",
+    "main.034c0293.js.map": "/personalwebsite/static/js/main.034c0293.js.map",
+    "453.13e9b7fa.chunk.js.map": "/personalwebsite/static/js/453.13e9b7fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d890ac89.css",
-    "static/js/main.fa83568d.js"
+    "static/css/main.d4d07f9e.css",
+    "static/js/main.034c0293.js"
   ]
 }
