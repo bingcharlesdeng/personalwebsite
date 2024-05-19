@@ -15,7 +15,8 @@ function App() {
       <div className="main-content"> {/* Wrap main content */}
 
       <Routes>
-        <Route path="/" element={<Home />} />  {/* Home route */}
+        {['/home', '/personalwebsite', '/'].map(path => <Route path={path} element={<Home />} />)}
+
         <Route path="/about" element={<About />} />  {/* About route (new) */}
         <Route path="/contact" element={<Contact />} />  {/* Contact route (new) */}
       </Routes>

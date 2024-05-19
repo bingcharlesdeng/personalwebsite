@@ -13,18 +13,19 @@ function Home() {
   return (
     <div className="home-container">
       <header className="home-header">
-        <h1>Grace Deng</h1> {/* Replace with your name or logo */}
+        <h1>Charles Deng</h1> {/* Replace with your name or logo */}
       </header>
       <main className="home-main">
         <AboutMe />
         <Skills />
+        <link rel="stylesheet" href="./skills.css" />
         <Portfolio /> {/* Add Portfolio component */}
         <Projects /> {/* Add Projects component */}
         <Contact />
         {/* Add more sections as needed */}
       </main>
       <footer className="home-footer">
-        <p>&copy; 2024 Grace Lee. All rights reserved.</p>
+        <p>&copy; 2024 Bing Deng. All rights reserved.</p>
         {/* Add social media links here */}
       </footer>
     </div>
