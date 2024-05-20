@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.277dfa65.css",
+    "main.css": "/personalwebsite/static/css/main.4713c759.css",
     "main.js": "/personalwebsite/static/js/main.44aba85d.js",
     "static/js/453.13e9b7fa.chunk.js": "/personalwebsite/static/js/453.13e9b7fa.chunk.js",
     "static/media/corgi.png": "/personalwebsite/static/media/corgi.878696b72a50cd158999.png",
@@ -15,12 +15,12 @@
     "static/media/mental-health.jpg": "/personalwebsite/static/media/mental-health.fb89fde082e677360251.jpg",
     "static/media/tennis-coaching.jpg": "/personalwebsite/static/media/tennis-coaching.82291a6c8d3830d9a332.jpg",
     "index.html": "/personalwebsite/index.html",
-    "main.277dfa65.css.map": "/personalwebsite/static/css/main.277dfa65.css.map",
+    "main.4713c759.css.map": "/personalwebsite/static/css/main.4713c759.css.map",
     "main.44aba85d.js.map": "/personalwebsite/static/js/main.44aba85d.js.map",
     "453.13e9b7fa.chunk.js.map": "/personalwebsite/static/js/453.13e9b7fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.277dfa65.css",
+    "static/css/main.4713c759.css",
     "static/js/main.44aba85d.js"
   ]
 }
