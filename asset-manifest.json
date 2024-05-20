@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.a85d9af0.css",
-    "main.js": "/personalwebsite/static/js/main.fb2b8be2.js",
+    "main.css": "/personalwebsite/static/css/main.4fd625b4.css",
+    "main.js": "/personalwebsite/static/js/main.e8bbebcd.js",
     "static/js/453.13e9b7fa.chunk.js": "/personalwebsite/static/js/453.13e9b7fa.chunk.js",
     "static/media/corgi.png": "/personalwebsite/static/media/corgi.878696b72a50cd158999.png",
     "static/media/profilePic.jpg": "/personalwebsite/static/media/profilePic.df49325f7d60831d12aa.jpg",
@@ -15,12 +15,12 @@
     "static/media/mental-health.jpg": "/personalwebsite/static/media/mental-health.fb89fde082e677360251.jpg",
     "static/media/tennis-coaching.jpg": "/personalwebsite/static/media/tennis-coaching.82291a6c8d3830d9a332.jpg",
     "index.html": "/personalwebsite/index.html",
-    "main.a85d9af0.css.map": "/personalwebsite/static/css/main.a85d9af0.css.map",
-    "main.fb2b8be2.js.map": "/personalwebsite/static/js/main.fb2b8be2.js.map",
+    "main.4fd625b4.css.map": "/personalwebsite/static/css/main.4fd625b4.css.map",
+    "main.e8bbebcd.js.map": "/personalwebsite/static/js/main.e8bbebcd.js.map",
     "453.13e9b7fa.chunk.js.map": "/personalwebsite/static/js/453.13e9b7fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a85d9af0.css",
-    "static/js/main.fb2b8be2.js"
+    "static/css/main.4fd625b4.css",
+    "static/js/main.e8bbebcd.js"
   ]
 }
