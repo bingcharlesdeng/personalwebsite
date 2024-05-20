@@ -10,11 +10,24 @@ export const skillsData = [
     ],
   },
   {
-    name: 'Graphic Design',
-    icon: 'fa-solid fa-palette', // Adjust icon class based on Font Awesome
-    description: 'Proficient in creating visually appealing graphics using design software like Adobe Photoshop and Illustrator.',
-    level: 'Intermediate',
-    tools: ['Photoshop', 'Illustrator', 'Figma'], // List of relevant tools
+    name: 'High-Level Tennis',
+    icon: 'fa-solid fa-tennis-ball', // Adjust icon class based on Font Awesome (optional)
+    description: 'Extensive experience playing, competing, and coaching high-level tennis. Skilled in strategy, technique, and mental fortitude development.',
+    level: 'Expert',
+    achievements: [ // Replace "achievements" with a more relevant section title if needed
+      'Accomplishment 1',
+      'Accomplishment 2',
+    ],
+  },
+  {
+    name: 'Fitness & Mental Health Coaching',
+    icon: 'fa-solid fa-dumbbell', // Adjust icon class based on Font Awesome (optional)
+    description: 'Passionate about helping individuals achieve their fitness and mental health goals. Certified coach with expertise in creating personalized programs and fostering a supportive environment.',
+    level: 'Advanced',
+    certifications: [ // Add certifications if applicable
+      'Certification 1',
+      'Certification 2',
+    ],
   },
   {
     name: 'Content Writing',
@@ -24,16 +37,6 @@ export const skillsData = [
     samples: [
       { title: 'Blog Post 1', link: 'https://...' }, // Add sample details
       { title: 'Website Copy', link: 'https://...' }, // Add sample details
-    ],
-  },
-  {
-    name: 'SEO Optimization',
-    icon: 'fa-solid fa-searchengin', // Adjust icon class based on Font Awesome
-    description: 'Knowledge of search engine optimization (SEO) best practices to improve website visibility.',
-    level: 'Beginner',
-    learningResources: [
-      { title: 'SEO Guide', link: 'https://...' }, // Add learning resource details
-      { title: 'SEO Tutorial', link: 'https://...' }, // Add learning resource details
     ],
   },
   {

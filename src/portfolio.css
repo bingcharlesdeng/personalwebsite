@@ -1,9 +1,8 @@
 .portfolio {
-  /* Styles from previous example */
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f5f5f5; /* Add a subtle background color */
+  background-color: #f5f5f5; 
 }
 
 .portfolio-header {
@@ -17,15 +16,15 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #333; /* Adjust title color */
+  color: #333; 
 }
 
 .portfolio-description {
   font-size: 1.1rem;
   line-height: 1.5;
-  color: #666; /* Adjust description color */
+  color: #666; 
   text-align: center;
-  max-width: 800px; /* Limit description width for readability on larger screens */
+  max-width: 800px; 
 }
 
 .portfolio-filters {
@@ -41,7 +40,7 @@
   margin-right: 10px;
   background-color: #f5f5f5;
   cursor: pointer;
-  transition: all 0.3s ease; /* Add smooth transition on hover */
+  transition: all 0.3s ease; 
 }
 
 .portfolio-filters button:hover {
@@ -49,8 +48,8 @@
 }
 
 .portfolio-filters button.active {
-  background-color: #007bff; /* Change active filter color for better visibility */
-  color: #fff; /* Change active filter text color */
+  background-color: #007bff; 
+  color: #fff; 
 }
 
 .portfolio-item {
@@ -61,9 +60,9 @@
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;
-  outline: none; /* Remove default outline on hover */
+  outline: none; 
   transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .portfolio-item:hover {
@@ -77,19 +76,19 @@
 
 .portfolio-item-image {
   width: 100%;
-  max-height: 200px; /* Adjust max-height as needed */
-  object-fit: cover; /* Optional: Scale image to fill container */
+  max-height: 200px; 
+  object-fit: cover; 
 }
 
 .portfolio-item-description {
-  flex: 1; /* Allow description to grow and fill remaining space */
+  flex: 1; 
   margin-top: 10px;
   font-size: 0.8rem;
 }
 
 .portfolio-item-category {
   font-size: 0.8rem;
-  color: #999; /* Adjust category color */
+  color: #999; 
   margin-bottom: 5px;
 }
 
@@ -103,14 +102,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100; /* Ensure modal appears above other content */
+  z-index: 100; 
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .project-modal.active {
   opacity: 1;
-  pointer-events: auto; /* Allow interaction with modal content */
+  pointer-events: auto; 
 }
 
 .project-modal-content {
