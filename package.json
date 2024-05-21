@@ -41,7 +41,8 @@
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.2"
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "wrangler": "^3.57.0"
   },
-  "homepage": "https://bingcharlesdeng.github.io/personalwebsite"
+  "homepage": ""
 }

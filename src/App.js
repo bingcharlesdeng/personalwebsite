@@ -20,7 +20,6 @@ function App() {
         <Route path="/about" element={<About />} />  {/* About route (new) */}
         <Route path="/contact" element={<Contact />} />  {/* Contact route (new) */}
       </Routes>
-      <Footer /> {/* Render Footer component at the bottom */}
       </div>
     </Router>
   );
