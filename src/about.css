@@ -1,0 +1,35 @@
+/* About section styles */
+.about-section {
+  padding: 40px;
+  max-width: 700px; /* Adjust as needed */
+  margin: 0 auto; /* Center the section horizontally */
+  font-family: Arial, sans-serif;
+}
+
+.about-section h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-section ul li {
+  margin-bottom: 10px;
+}
+
+.about-section ul li:before {
+  content: "•"; /* Bullet point character */
+  margin-right: 10px;
+  color: var(--accent-color); /* Use variable from main stylesheet */
+}

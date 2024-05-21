@@ -1,0 +1,44 @@
+/* Hero section styles */
+.home-hero {
+  height: 100rem; /* Adjust height as needed */
+  width: 100rem; /* Adjust width as needed */
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color); /* Use variable from home.css */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center; /* Center hero text */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.hero-btn {
+  background-color: var(--primary-color); /* Use variable from home.css */
+  color: var(--text-color); /* Use variable from home.css */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: var(--accent-color); /* Use variable from home.css */
+}
+
+.hero-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}

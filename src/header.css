@@ -14,7 +14,7 @@
 /* Logo or Title Styling */
 .header-title {
   flex: 1; /* Allow logo/title to grow horizontally */
-  text-align: left; /* Align text to the left */
+  text-align: center; /* Align text to the left */
 }
 
 .header-title img.logo {

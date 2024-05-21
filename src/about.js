@@ -1,12 +1,18 @@
 import React from 'react';
+import AboutIntro from './AboutIntro'; // Import AboutIntro component
+import AboutSkills from './AboutSkills'; // Import AboutSkills component
+import AboutExperience from './AboutExperience'; // Import AboutExperience component
+import './about.css'; // Import stylesheet for customization
 
-function About() {
+const About = () => {
   return (
-    <div>
-      <h1>About Us</h1>
-      <p>This is the About Us page content.</p>
-    </div>
+    <section className="about-section">
+      <AboutIntro /> {/* Display introduction section */}
+      <AboutSkills /> {/* Display skills section */}
+      <AboutExperience /> {/* Display experience section */}
+      {/* Add more sections as needed (e.g., Testimonials, Awards) */}
+    </section>
   );
-}
+};
 
 export default About;
