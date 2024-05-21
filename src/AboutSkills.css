@@ -1,0 +1,50 @@
+.about-skills {
+  margin: 40px 0; /* Add some margin for spacing */
+}
+
+.about-skills h2 {
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px; /* Add some space between heading and list */
+}
+
+.about-skills ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: space-between; /* Distribute items evenly with spacing */
+}
+
+.about-skills li {
+  width: calc(33% - 20px); /* Set width for each skill item (adjust based on desired layout) */
+  margin: 10px; /* Add some margin between skill items */
+  text-align: center; /* Center the content within each skill item */
+  padding: 20px; /* Add some padding for better readability */
+  border-radius: 5px; /* Add rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: all 0.2s ease-in-out; /* Add a smooth hover effect */
+  cursor: pointer; /* Make it look clickable */
+}
+
+.about-skills li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  transform: translateY(-2px); /* Add a slight upward movement on hover */
+}
+
+.about-skills li i {
+  font-size: 2em; /* Increase icon size for better visibility */
+  margin-bottom: 10px; /* Add some space between icon and text */
+  color: #333; /* Set icon color (adjust as needed) */
+}
+
+.about-skills li h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.2em; /* Increase heading size for better hierarchy */
+  font-weight: bold; /* Make the skill title bolder */
+}
+
+.about-skills li p {
+  font-size: 1em; /* Adjust paragraph font size for readability */
+  line-height: 1.5; /* Increase line-height for better spacing */
+}

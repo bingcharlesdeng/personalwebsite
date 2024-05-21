@@ -5,7 +5,7 @@ import Home from './home.js'; // Import Home component
 import Footer from './Footer.js'; // Import Footer component
 import About from './about.js'; // Import About component (new)
 import Contact from './contact.js'; // Import Contact component (new)
-import "./app.css";
+import "./App.css";
 
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
       <div className="main-content"> {/* Wrap main content */}
 
       <Routes>
-        <Route path="/" element={<Home />} />  {/* Home route */}
+        {['/home', '/personalwebsite', '/'].map(path => <Route path={path} element={<Home />} />)}
+
         <Route path="/about" element={<About />} />  {/* About route (new) */}
         <Route path="/contact" element={<Contact />} />  {/* Contact route (new) */}
       </Routes>

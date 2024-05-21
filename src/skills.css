@@ -1,0 +1,160 @@
+@base-color: #fff; 
+@text-color: #333; 
+@accent-color: #007bff; 
+
+.skills {
+  margin: 4rem 0;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: @base-color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-item {
+  width: calc(28% - 1.5rem);
+  margin: 0.75rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  background-color: @base-color;
+  position: relative;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: @text-color;
+}
+
+.skill-content {
+  flex: 1;
+}
+
+.skill-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.skill-content p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-level {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.skill-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.skill-progress .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: @accent-color;
+  transition: width 0.5s ease-in-out;
+}
+
+.skill-item:hover .skill-progress .progress-bar {
+  width: 75%; /* Adjust hover progress bar width based on proficiency */
+}
+
+.project-list,
+.tool-list,
+.sample-list,
+.resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.project-list li,
+.tool-list li,
+.sample-list li,
+.resource-list li {
+  margin-bottom: 0.3rem;
+}
+
+.project-list a,
+.sample-list a,
+.resource-list a {
+  color: @text-color;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-list a:hover,
+.sample-list a:hover,
+.resource-list a:hover {
+  color: @accent-color;
+}
+
+.skill-level.advanced {
+  color: #28a745; /* Green for advanced level */
+}
+
+.skill-level.intermediate {
+  color: #ffc107; /* Orange for intermediate level */
+}
+
+.skill-level.beginner {
+  color: #f0ad4e; /* Orange-red for beginner level */
+}
+
+@media (max-width: 768px) {
+  .skill-item {
+    width: calc(50% - 1.5rem); /* Adjust width for smaller screens */
+  }
+}
+
+.make-border-radius(@radius) {
+  border-radius: @radius;
+}
+
+.skill-item {
+  @make-border-radius(5px); /* Apply border radius mixin */
+}
+
+@hover-transform: translateY(-3px);
+@hover-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+.skill-item:hover {
+  transform: @hover-transform;
+  box-shadow: @hover-shadow;
+}

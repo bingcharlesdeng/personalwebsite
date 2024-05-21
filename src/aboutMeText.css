@@ -1,0 +1,7 @@
+.about-me-text {
+  font-size: 1.1em; /* Set a comfortable font size for reading */
+  line-height: 1.5; /* Increase line-height for better spacing */
+  margin: 0 auto; /* Center the text horizontally */
+  max-width: 700px; /* Limit text width for better readability on larger screens (optional) */
+  color: #333; /* Set the text color (adjust as needed) */
+}

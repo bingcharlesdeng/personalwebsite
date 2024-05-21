@@ -1,33 +1,30 @@
 import React from 'react';
-import './home.css';
 import AboutMe from './aboutMe'; // Import AboutMe component
 import Skills from './skills'; // Import Skills component
 import Contact from './contact'; // Import Contact component
 import Portfolio from './portfolio'; // Import Portfolio component
-import Projects from './projects'; // Import Projects component (newly created)
-
+import Projects from './projects'; // Import Projects component
+import Hero from './Hero'; // Import newly created Hero component
+import './home.css'; // Import stylesheet for customization
 
 function Home() {
-  // ... (rest of your code)
-
   return (
-    <div className="home-container">
-      <header className="home-header">
-        <h1>Grace Deng</h1> {/* Replace with your name or logo */}
-      </header>
+    <section className="home">
+      {/* Hero Section */}
+      
+
+      {/* Main Content Section */}
       <main className="home-main">
+        <Hero />
         <AboutMe />
         <Skills />
-        <Portfolio /> {/* Add Portfolio component */}
-        <Projects /> {/* Add Projects component */}
-        <Contact />
-        {/* Add more sections as needed */}
+        <Portfolio />
+        <Projects />
       </main>
-      <footer className="home-footer">
-        <p>&copy; 2024 Grace Lee. All rights reserved.</p>
-        {/* Add social media links here */}
-      </footer>
-    </div>
+
+      {/* Contact Section */}
+      <Contact /> {/* Consider adding a fixed contact bar at the bottom */}
+    </section>
   );
 }
 

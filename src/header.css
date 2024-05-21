@@ -1,60 +1,84 @@
-/* Base styles */
-
+/* Base Styles */
 .header {
-  height: 100rem; /* Adjust height as needed */
-  background-color: #f5f5f5; /* Light gray background (optional) */
+  height: 8rem; /* Adjust height as needed */
+  background-color: #fff; /* Light background */
   color: #333; /* Dark text color */
-  display: flex; /* Arrange elements horizontally */
-  justify-content: space-between; /* Space elements evenly */
-  align-items: flex-end; /* Align vertically to the bottom */
-  padding: 1rem 2rem; /* Add some padding */
-  background-image: url("./assets/rothko.png"); /* Replace with your logo path */
-  background-size: cover; /* Stretch image to fill container */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  background-position: center; /* Center image horizontally and vertically */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align vertically to the center */
+  padding: 0 2rem; /* Remove top/bottom padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.2s ease-in-out; /* Add transition for smooth changes */
 }
 
-/* Navigation styling (focused on alignment and style) */
+/* Logo or Title Styling */
+.header-title {
+  flex: 1; /* Allow logo/title to grow horizontally */
+  text-align: center; /* Align text to the left */
+}
 
-.navigation {
-  display: flex; /* Keep navigation elements inline */
-  list-style: none; /* Remove default list style */
-  padding: 0; /* Remove default padding */
+.header-title img.logo {
+  width: 100px; /* Adjust logo size as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image fills container while maintaining aspect ratio */
+}
+
+.header-title h1 {
   margin: 0; /* Remove default margin */
-  font-family: sans-serif; /* Set a clean font family */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold;
+}
+
+/* Navigation Styling */
+.navigation {
+  display: flex;
+  list-style: none; /* Remove default list style (bullets) */
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 .navigation-list {
-  display: flex; /* Ensure list items are displayed inline */
+  display: flex;
+  align-items: center; /* Align navigation links vertically */
+   list-style: none;
 }
 
 .navigation li {
   margin-right: 1rem; /* Add space between navigation links */
-  list-style: none;
+
 }
 
 .navigation a {
-  text-decoration: none; /* Remove underline from links */
-  color: #333; /* Set link text color */
-  font-weight: bold; /* Add some weight to navigation text */
-  transition: color 0.3s ease; /* Add smooth hover effect */
-  padding: 0.5rem 1rem; /* Add some padding for links */
-  border-radius: 4px; /* Add subtle rounded corners */
-  background-color: #f5f5f5; /* Set link background color (optional) */
+  text-decoration: none;
+  color: #333;
+  font-weight: 500; /* Moderate weight for links */
+  transition: color 0.2s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
 .navigation a:hover {
   color: #007bff; /* Blue hover color */
-  background-color: #e0e0e0; /* Change background on hover (optional) */
 }
 
-/* Responsive Design (Optional) */
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  /* Styles for smaller screens (e.g., mobile) */
   .header {
-    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
   }
 
-  /* Adjust header-title and navigation layout for mobile if needed */
+  .header-title {
+    flex: none; /* Stop logo/title from growing on small screens */
+  }
+
+  .navigation {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: stretch; /* Stretch links to fill width */
+    text-align: center; /* Center navigation text */
+  }
+
+  .navigation li {
+    margin: 0.5rem 0; /* Adjust spacing for stacked navigation */
+  }
 }

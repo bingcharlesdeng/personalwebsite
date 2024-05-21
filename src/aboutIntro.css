@@ -1,0 +1,15 @@
+.about-intro {
+  margin-bottom: 40px; /* Add some space after the intro section */
+}
+
+.about-intro h2 {
+  text-align: center; /* Center the heading text */
+  margin-bottom: 10px; /* Add some space between heading and text */
+  font-size: 1.5em; /* Set a slightly larger font size for the heading */
+}
+
+.about-intro p {
+  font-size: 1em; /* Set a comfortable font size for reading */
+  line-height: 1.5; /* Increase line-height for better spacing */
+  color: #333; /* Set the text color (adjust as needed) */
+}

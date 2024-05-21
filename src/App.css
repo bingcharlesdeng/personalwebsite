@@ -1,4 +1,4 @@
-/* Keep existing styles (optional) */
+w/* Keep existing styles (optional) */
 
 /* New styles for Header component */
 .header {
@@ -48,5 +48,10 @@ body {
 .App {
   /* Existing styles (if any) */
   flex: 1; /* Allow main content to fill available space */
+}
+
+.footer{
+  width: 100%;
+
 }
 

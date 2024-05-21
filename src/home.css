@@ -1,20 +1,30 @@
+/* Base styles */
+@base-font-family: Arial, sans-serif;
+@base-background-color: #f5f5f5;
+
+/* Text colors */
+@text-color: #fff;
+@primary-color: #333;
+@secondary-color: #e0e0e0;
+@accent-color: #222;
+
+/* Home container */
+
 .home-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Set minimum height for viewport */
-  background-color: #f5f5f5; /* Light background color */
-  font-family: Arial, sans-serif; /* Base font family */
-  margin: 0; /* Remove default margin */
-  padding: 0 20px; /* Add padding for content area */
+  min-height: 100vh;
+  background-color: @base-background-color;
+  font-family: @base-font-family;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .home-header,
 .home-main,
 .home-footer {
-  flex: 1; /* Make header, main, and footer sections grow to fill space */
+  flex: 1;
 }
-
-/* Header styles */
 
 .home-header {
   padding: 20px;
@@ -22,65 +32,227 @@
 }
 
 h1 {
-  margin: 0; /* Remove default margin for heading */
-  font-size: 2em; /* Adjust font size for title */
+  margin: 0;
+  font-size: 2em;
 }
-
-/* Main content styles */
 
 .home-main {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Add spacing between sections */
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: @base-background-color;
+  font-family: @base-font-family;
+  margin: 0;
+  padding: 0 20px;
+  align-items: center; /* Center the entire home container horizontally */
+}
+
+/* Sections within the home container */
+.home-hero,
+.home-main,
+.home-contact {
+  flex: 1; /* Allow growth but don't force full width */
+  display: flex;
+  justify-content: center; /* Center each section horizontally */
+  align-items: center; /* Center each section vertically */
+}
+
+/* Hero section styles */
+.home-hero {
+  height: 50vh; /* Adjust height as needed */
+  width: 100%; /* Ensure full width on all screens */
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  color: @text-color;
+}
+
+.hero-content {
+  text-align: center; /* Center hero text */
+  color: black;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Hero button styles */
+.hero-btn {
+  background-color: @primary-color;
+  color: @text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: @accent-color;
+}
+
+/* Hero image styles */
+.hero-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Main content section styles */
+.home-main {
+  flex-direction: column; /* Stack sections vertically */
+  gap: 40px;
 }
 
 .about-me,
 .projects {
-  flex: 1; /* Make sections grow to fill available space within main */
-  background-color: #fff; /* White background for sections */
-  padding: 20px; /* Add padding for content within sections */
-  border-radius: 5px; /* Add rounded corners for sections (optional) */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections (optional) */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  width: 100%; /* Ensure full width on all screens */
 }
 
 h2 {
-  margin: 0; /* Remove default margin for headings */
-  font-size: 1.5em; /* Adjust font size for section titles */
+  margin: 0;
+  font-size: 1.3em;
 }
 
 p {
-  font-size: 1em; /* Adjust font size for paragraph text */
-  line-height: 1.5; /* Adjust line spacing for readability */
+  font-size: 1em;
+  line-height: 1.5;
 }
 
-/* Footer styles */
-
-.home-footer {
+/* Contact section styles */
+.home-contact {
   padding: 20px;
-  text-align: center;
-  background-color: #e0e0e0; /* Footer background color */
+  background-color: @secondary-color;
+  position: relative;
 }
 
-project {
-  display: flex; /* Make project a flexbox container */
-  align-items: center; /* Align content vertically within project */
-  margin-bottom: 20px; /* Add spacing between projects */
+/* Responsive styles */
+
+/* Large screens (>= 960px) */
+@media (min-width: 960px) {
+  .home-main {
+    flex-direction: row; /* Change to row for horizontal layout */
+    justify-content: space-between; /* Distribute content with some spacing */
+  }
+
+  .about-me,
+  .projects {
+    flex: 1; /* Allow sections to grow and shrink proportionally */
+    max-width: 45%; /* Set a maximum width to prevent excessive stretching */
+  }
 }
 
-.project-image {
-  width: 150px; /* Set image width */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Add spacing between image and text */
-  border-radius: 5px; /* Add rounded corners for image (optional) */
+/* Extra large screens (>= 1440px) */
+/* Extra large screens (>= 1440px) */
+@media (min-width: 1440px) {
+
+  /* Main content section */
+  .home-main {
+    gap: 50px; /* Increase spacing between sections for a more spacious feel */
+  }
+
+  .about-me,
+  .projects {
+    max-width: 40%; /* Adjust section width to create more breathing room */
+    padding: 30px; /* Increase padding for a more comfortable reading experience */
+  }
+
+  /* Typography adjustments */
+  h1 {
+    font-size: 3em; /* Increase heading size for a more impactful presentation */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Increase subheading size for better hierarchy */
+  }
+
+  p {
+    font-size: 1.1em; /* Increase paragraph size for improved readability */
+  }
+
+  /* Consider adding subtle hover effects or animations for a more interactive feel */
+  .about-me:hover,
+  .projects:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle hover shadow */
+  }
 }
 
-.home-main {
-  /* ... (existing styles) */
-  flex-wrap: wrap; /* Wrap projects if they overflow container width */
-  justify-content: space-between; /* Distribute projects evenly */
+/* Mobile screens (<= 480px) */
+@media (max-device-width: 480px) {
+  .home-hero,
+  .home-contact {
+    display: flex /* Hide Hero and Contact sections on small screens */
+  }
+
+  .home-main {
+    gap: 20px; /* Reduce spacing between sections */
+  }
+
+  .about-me,
+  .projects,
+  .skills {  /* Include Skills component in media query */
+    flex: 1 100%; /* Ensure full width and growth on mobile */
+    margin: 0 auto;  /* Center the Skills component horizontally */
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  }
 }
 
-.navigation {
-  /* Existing styles */
-  align-items: center; /* Align navigation links vertically */
+/* Default iPad screens (device-width: 768px) */
+@media (device-width: 768px) {
+  /* You can add specific styles for the default iPad portrait layout here (optional) */
+  .about-me,
+  .projects {
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+}
+
+/* Portrait Layouts (481px - 1024px) */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  .home-main {
+    flex-direction: column; /* Stack sections vertically on portrait tablets */
+  }
+
+  .about-me,
+  .projects,
+  .skills {
+    flex: 1 100%; /* Ensure full width on portrait tablets */
+    margin: 0 auto;  /* Center each section horizontally */
+  }
+}
+
+/* Landscape Layouts (481px - 1024px) */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .home-main {
+    flex-direction: row; /* Change to row for horizontal layout on landscape tablets */
+    justify-content: space-between; /* Distribute content with some spacing */
+  }
+
+  .about-me,
+  .projects {
+    flex: 1; /* Allow sections to grow and shrink proportionally */
+    max-width: 45%; /* Set a maximum width to prevent excessive stretching */
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .skills {  /* Include Skills component in media query */
+    margin: 0 auto;  /* Center the Skills component horizontally */
+  }
 }

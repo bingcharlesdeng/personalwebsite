@@ -1,0 +1,44 @@
+.about-experience {
+  margin-bottom: 40px; /* Add space after the experience section */
+  border-radius: 5px; /* Subtle rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.experience-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.experience-list li {
+  margin-bottom: 20px; /* Space between experience items */
+  padding: 20px; /* Padding for content within each item */
+  border-radius: 5px; /* Rounded corners for each item */
+  background-color: #f5f5f5; /* Light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+  cursor: pointer; /* Make it look clickable */
+}
+
+.experience-list li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  transform: translateY(-2px); /* Add slight upward movement on hover */
+}
+
+.experience-list li h3 {
+  margin: 0 0 5px 0; /* Adjust margin for better spacing */
+  font-size: 1.1em; /* Adjust heading size */
+  font-weight: bold; /* Make the company name stand out */
+}
+
+.experience-list li p {
+  font-size: 1em; /* Set a comfortable font size for reading */
+  line-height: 1.5; /* Increase line-height for better spacing */
+  color: #333; /* Set the text color (adjust as needed) */
+}
+
+.experience-list li .experience-dates {
+  font-size: 0.9em; /* Slightly smaller font size for dates */
+  color: #888; /* Duller color for dates */
+  margin-bottom: 5px; /* Add space between dates and description */
+}
