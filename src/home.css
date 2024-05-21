@@ -127,11 +127,6 @@ p {
 /* Extra large screens (>= 1440px) */
 @media (min-width: 1440px) {
 
-  /* Hero section */
-  .home-hero {
-    height: 70vh; /* Increase hero height for a more immersive experience */
-  }
-
   /* Main content section */
   .home-main {
     gap: 50px; /* Increase spacing between sections for a more spacious feel */
@@ -166,11 +161,8 @@ p {
 /* Mobile screens (<= 480px) */
 @media (max-device-width: 480px) {
   .home-hero,
-  .home-contact
-  .home-skills {
+  .home-contact {
     display: grid; /* Hide Hero and Contact sections on small screens */
-    align-items: center;
-
   }
 
   .home-main {
@@ -178,8 +170,11 @@ p {
   }
 
   .about-me,
-  .projects {
+  .projects,
+  .skills {  /* Include Skills component in media query */
     flex: 1 100%; /* Ensure full width and growth on mobile */
+    margin: 0 auto;  /* Center the Skills component horizontally */
+    justify-content: center;
   }
 }
 
@@ -199,8 +194,10 @@ p {
   }
 
   .about-me,
-  .projects {
+  .projects,
+  .skills {
     flex: 1 100%; /* Ensure full width on portrait tablets */
+    margin: 0 auto;  /* Center each section horizontally */
   }
 }
 
@@ -216,5 +213,9 @@ p {
     flex: 1; /* Allow sections to grow and shrink proportionally */
     max-width: 45%; /* Set a maximum width to prevent excessive stretching */
     font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .skills {  /* Include Skills component in media query */
+    margin: 0 auto;  /* Center the Skills component horizontally */
   }
 }
