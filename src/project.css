@@ -1,15 +1,16 @@
 .project {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
-  margin-bottom: 20px; /* Adjust spacing as needed */
+  margin-bottom: 10px; /* Adjust spacing as needed */
   border: 1px solid #ddd; /* Add a subtle border */
   border-radius: 5px; /* Add rounded corners */
   padding: 15px; /* Add some padding inside the project */
+  text-align: left;
 }
 
 .project img {
   width: 150px; /* Adjust image width as needed */
-  height: auto; /* Maintain aspect ratio */
+  height: 150px; /* Maintain aspect ratio */
   margin-bottom: 15px; /* Add space below image */
   /* Optional: Center image within project */
   align-self: center;
@@ -48,11 +49,13 @@
 
 .project-meta {
   display: flex;  /* Removed flex for meta info container */
+  margin-bottom: 5rem;
+  margin-left: 20rem;
 }
 
 .project-meta-right {
   float: right; /* Simple right-alignment using float */
-  margin-left: 10px; /* Optional: Add some space between category and date */
+  margin-left: 20px; /* Optional: Add some space between category and date */
 }
 
 .category,
@@ -66,5 +69,6 @@
   text-decoration: none; /* Remove underline from link */
   color: #007bff; /* Set link color */
   font-weight: bold; /* Make link text bold */
-  margin-top: auto; /* Move link to the bottom */ /* Optional */
+  text-align: left;
+  
 }

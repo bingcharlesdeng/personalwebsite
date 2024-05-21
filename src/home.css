@@ -41,7 +41,8 @@ h1 {
   flex-direction: column;
   gap: 40px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .home {

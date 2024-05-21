@@ -11,8 +11,9 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <Header /> {/* Render Header component */}
+     
       <div className="main-content"> {/* Wrap main content */}
+     <Header /> {/* Render Header component */}
 
       <Routes>
         {['/home', '/personalwebsite', '/'].map(path => <Route path={path} element={<Home />} />)}

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioList from './PortfolioList';
-import ProjectModal from './ProjectModal'; // Import ProjectModal component
 import { portfolioItems } from './portfolioData'; // Import portfolioItems from portfolioData.js
 import PortfolioItem from './PortfolioItem';
 import './portfolio.css';
@@ -54,7 +53,6 @@ function Portfolio() {
           <PortfolioItem key={project.id} project={project} onProjectClick={handleProjectClick} />
         ))}
       </ul>
-      {selectedProject && <ProjectModal project={selectedProject} onClose={handleCloseModal} />}
     </section>
   );
 }

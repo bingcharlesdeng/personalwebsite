@@ -8,13 +8,14 @@ w/* Keep existing styles (optional) */
 
 .header-title {
   /* Adjust styles for logo/title if needed (optional) */
+  display: flex;
 }
 
 .navigation {
   display: flex; /* Keep navigation elements inline */
   list-style: none; /* Remove default list style */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  padding: auto; /* Remove default padding */
+  margin: auto; /* Remove default margin */
 }
 
 .navigation-list {
@@ -23,7 +24,7 @@ w/* Keep existing styles (optional) */
 
 /* Consider adjusting navigation styles for better visual appeal */
 .navigation a {
-  margin-right: 1rem; /* Add space between navigation links (optional) */
+  /* Add space between navigation links (optional) */
   /* Other navigation link styles (color, font-weight, etc.) */
 }
 
@@ -53,5 +54,17 @@ body {
 .footer{
   width: 100%;
 
+}
+
+.main-content {
+    top: 0; /* or whatever position is desired */
+    left: 0;
+    right: 0;
+    height: 0;
+    /* center all inline content */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row
 }
 

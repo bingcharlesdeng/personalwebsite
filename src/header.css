@@ -4,7 +4,7 @@
   background-color: #fff; /* Light background */
   color: #333; /* Dark text color */
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center; /* Align vertically to the center */
   padding: 0 2rem; /* Remove top/bottom padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -14,7 +14,7 @@
 /* Logo or Title Styling */
 .header-title {
   flex: 1; /* Allow logo/title to grow horizontally */
-  text-align: center; /* Align text to the left */
+  text-align: right; /* Align text to the left */
 }
 
 .header-title img.logo {
@@ -35,13 +35,17 @@
   list-style: none; /* Remove default list style (bullets) */
   padding: 0;
   margin: 0;
+   align-items: right; /* Align navigation links vertically */
+   list-style: none;
+   justify-content: right;
   font-family: sans-serif;
 }
 
 .navigation-list {
   display: flex;
-  align-items: center; /* Align navigation links vertically */
+  align-items: right; /* Align navigation links vertically */
    list-style: none;
+   justify-content: right;
 }
 
 .navigation li {

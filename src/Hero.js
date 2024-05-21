@@ -10,7 +10,6 @@ const Hero = () => {
           {/* A concise and impactful tagline summarizing what you do */}
           I'm a passionate developer and designer crafting creative solutions.
         </p>
-        <button className="hero-btn">Let's Connect!</button> {/* Replace with link to contact */}
       </div>
       <div className="hero-image"> {/* Add an image or video background */}
         {/* Replace with your preferred image/video */}
