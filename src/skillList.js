@@ -15,8 +15,7 @@ export const skillsData = [
     description: 'Extensive experience playing, competing, and coaching high-level tennis. Skilled in strategy, technique, and mental fortitude development.',
     level: 'Expert',
     achievements: [ // Replace "achievements" with a more relevant section title if needed
-      'Accomplishment 1',
-      'Accomplishment 2',
+      { title: 'Pasadena Star News Player of the Year', link: 'https://www.pasadenastarnews.com/2015/06/25/arcadias-charles-deng-is-tennis-player-of-the-year/' }
     ],
   },
   {

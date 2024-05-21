@@ -97,7 +97,8 @@
 .project-list,
 .tool-list,
 .sample-list,
-.resource-list {
+.resource-list 
+.accomplishments{
   list-style: none;
   padding: 0;
   margin: 0.5rem 0;

@@ -15,6 +15,7 @@ function Skills() {
               <p>{skill.description}</p>
               <div className="skill-info">
                 <span className="skill-level">Level: {skill.level}</span>
+
                 {/* Conditionally render additional info based on skill type */}
                 {skill.projects && (
                   <ul className="project-list">
@@ -44,13 +45,12 @@ function Skills() {
                     ))}
                   </ul>
                 )}
-                {skill.learningResources && (
-                  <ul className="resource-list">
-                    <h3>Learning Resources</h3>
-                    {skill.learningResources.map((resource) => (
-                      <li key={resource.title}>
-                        <a href={resource.link}>{resource.title}</a>
-                      </li>
+                {skill.achievements && (
+                  <ul className="achievement-list">
+                    <h3>Achievements</h3>
+                    {skill.achievements.map((achievement) => (
+                    <a href={achievement.link}>{achievement.title}</a>
+                    
                     ))}
                   </ul>
                 )}
