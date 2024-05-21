@@ -3,7 +3,7 @@
 @base-background-color: #f5f5f5;
 
 /* Home Page Styles (from your original footer.css) */
-.home-container {
+/*.home-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -11,23 +11,21 @@
   font-family: @base-font-family;
   margin: 0;
   padding: 0 20px;
-}
+}*/
 
-.home-header,
+/*.home-header,
 .home-main,
 .home-footer {
   flex: 1;
-}
+}*/
 
-.home-header {
+/*.home-header {
   padding: 20px;
   text-align: center;
-}
+}*/
 
-h1 {
-  margin: 0;
-  font-size: 2em;
-}
+
+
 
 .home-main {
   display: flex;
@@ -35,6 +33,11 @@ h1 {
   gap: 40px;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
 .about-me,
@@ -103,13 +106,14 @@ p {
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .footer-content {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1140px;
+  max-width: 100%;
   margin: 0 auto;
 }
 

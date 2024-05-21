@@ -9,6 +9,41 @@
 @accent-color: #222;
 
 /* Home container */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: @base-background-color;
+  font-family: @base-font-family;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.home-header,
+.home-main,
+.home-footer {
+  flex: 1;
+}
+
+.home-header {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .home {
   display: flex;
   flex-direction: column;
