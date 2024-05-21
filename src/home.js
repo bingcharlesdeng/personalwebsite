@@ -6,6 +6,7 @@ import Portfolio from './portfolio'; // Import Portfolio component
 import Projects from './projects'; // Import Projects component
 import Hero from './Hero'; // Import newly created Hero component
 import './home.css'; // Import stylesheet for customization
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -21,10 +22,11 @@ function Home() {
         <Portfolio />
         <Projects />
       </main>
-
       {/* Contact Section */}
       <Contact /> {/* Consider adding a fixed contact bar at the bottom */}
+
     </section>
+
   );
 }
 
