@@ -80,6 +80,8 @@
   flex-direction: column; /* Stack content vertically */
   transition: transform 0.2s ease-in-out; /* Smooth hover animation */
   position: relative; /* Required for hover effects on child elements */
+
+
 }
 
 .project:hover {
@@ -90,8 +92,9 @@
 .project img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Crop image to fit container */
+  object-fit: scale-down; /* Crop image to fit container */
   margin-bottom: 0.75rem; 
+  align-self: center;
 }
 
 /* Project Description */

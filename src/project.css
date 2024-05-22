@@ -1,3 +1,4 @@
+/* Base styles for projects */
 .project {
   display: flex;
   flex-direction: column;
@@ -11,32 +12,39 @@
   width: fit-content;
 }
 
+/* Project Image (Centered) */
 .project img {
   width: 100%; /* Allow images to fill available space */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 1.5rem; /* Adjust spacing below image */
+  /* Center the image vertically and horizontally */
+  align-self: center;
 }
 
-.project h3 {
-  margin: 0 0 15px 0; /* Adjust top and bottom margin */
-  font-size: 1.2rem; /* Set font size for title */
-}
-
-.project-description {
-  margin-bottom: 1rem; /* Adjust space below description */
-  line-height: 1.5; /* Increase line spacing for readability */
-}
-
-.project-content { /* Styles for project content area */
+/* Project Content */
+.project-content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;  /* Add space between content sections */
+  gap: 1rem; /* Add space between content sections */
   padding: 1.5rem; /* Add padding for better visual separation */
   background-color: #fff; /* Set a light background color */
   border-radius: 5px; /* Add subtle rounded corners */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Project Title */
+.project h3 {
+  margin: 0 0 15px 0; /* Adjust top and bottom margin */
+  font-size: 1.2rem; /* Set font size for title */
+}
+
+/* Project Description */
+.project-description {
+  margin-bottom: 1rem; /* Adjust space below description */
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+/* Project Information (.project-info) */
 .project-info {
   display: flex;
   flex-wrap: wrap; /* Allow info items to wrap on smaller screens */
@@ -44,19 +52,24 @@
   list-style: none; /* Remove default list style for clarity */
   padding: 0; /* Remove default padding */
   font-size: 14px; /* Set font size for info labels and content */
+  margin: 0.5rem 0.8rem;
 }
 
 .project-info li {
-  margin-right: 1rem; /* Add space between list items */
+  display: flex;
+  align-items: center; /* Align label and content vertically */
+  margin: 0.5rem 0; /* Adjust spacing between list items */
   color: #333; /* Use a darker color for better contrast */
 }
 
 .info-label {
   font-weight: bold; /* Make info labels bold */
   margin-right: 5px; /* Add space between label and content */
+  flex: 0 0 auto; /* Prevent label from growing horizontally */
 }
 
-.project-meta { /* Styles for project meta information */
+/* Project Meta Information (.project-meta) */
+.project-meta {
   display: flex;
   justify-content: space-between; /* Align items horizontally */
   margin-bottom: 0; /* Remove bottom margin */
@@ -64,6 +77,7 @@
   color: #888; /* Use a lighter color for meta info */
 }
 
+/* Project Link */
 .project-link {
   text-decoration: none; /* Remove underline from link */
   color: #007bff; /* Set link color */
@@ -84,11 +98,4 @@
   .project-content {
     flex-grow: unset; /* Disable content growth on larger screens */
   }
-}
-
-.project-container {  /* Styles for project container */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally within container */
-  justify-content: center; /* Center content vertically within container */
 }

@@ -3,14 +3,14 @@
 @accent-color: #007bff; 
 
 .contact {
-  padding: 4rem 2rem;
   margin: 0 auto;
-  margin-left: 25%;
-  margin-right: 25%;
+  padding: 2rem;
+
   background-color: @base-color;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
+  align-items: center;
 }
 
 .contact h2 {
@@ -56,10 +56,9 @@
 
 .contact-list li:nth-child(3) a::before {
   content: ""; /* Placeholder for icon content */
-  display: inline-block;
+  display: flex;
   width: 1.5rem;
   height: 1.5rem;
-  margin-right: 0.5rem;
   vertical-align: middle; /* Align with text */
   background-color: #ddd; /* Placeholder background color */
   border-radius: 50%;
