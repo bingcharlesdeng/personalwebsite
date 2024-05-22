@@ -13,13 +13,6 @@
 }
 
 /* Project Image (Centered) */
-.project img {
-  width: 100%; /* Allow images to fill available space */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 1.5rem; /* Adjust spacing below image */
-  /* Center the image vertically and horizontally */
-  align-self: center;
-}
 
 /* Project Content */
 .project-content {
@@ -58,7 +51,7 @@
 .project-info li {
   display: flex;
   align-items: center; /* Align label and content vertically */
-  margin: 0.5rem 0; /* Adjust spacing between list items */
+  margin: 0.5rem 0.5rem; /* Adjust spacing between list items */
   color: #333; /* Use a darker color for better contrast */
 }
 
