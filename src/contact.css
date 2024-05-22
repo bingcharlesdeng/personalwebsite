@@ -11,6 +11,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
   align-items: center;
+  margin-left: 22.5%
 }
 
 .contact h2 {

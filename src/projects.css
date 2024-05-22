@@ -102,7 +102,11 @@
   /* New approach using flexbox */
   display: flex;
   flex: 0 0 auto; /* Prevent image from growing horizontally */
-  margin-left: 9rem; /* Adjust spacing as needed */
+  justify-self: center;
+  flex-direction:row;/* Adjust spacing as needed */
+  text-align: center;
+margin-left:100%;
+margin-right:auto;
 }
 
 

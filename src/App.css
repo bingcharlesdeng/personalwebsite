@@ -4,7 +4,7 @@
 .header {
   display: flex; /* Enable flexbox for header layout */
   justify-content: center; /* Space elements horizontally */
-  align-items: center; /* Align header content vertically */
+  content: center; /* Align header content vertically */
   padding: 1rem; /* Add some padding for spacing */
   background-color: #fff; /* Set a white background for the header */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
