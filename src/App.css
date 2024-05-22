@@ -3,29 +3,31 @@ w/* Keep existing styles (optional) */
 /* New styles for Header component */
 .header {
   display: flex; /* Enable flexbox for header layout */
-  justify-content: space-between; /* Space elements horizontally */
+  justify-content: center; /* Space elements horizontally */
 }
 
 .header-title {
   /* Adjust styles for logo/title if needed (optional) */
   display: flex;
+  justify-content: center;
 }
 
 .navigation {
   display: flex; /* Keep navigation elements inline */
   list-style: none; /* Remove default list style */
-  padding: auto; /* Remove default padding */
-  margin: auto; /* Remove default margin */
+
 }
 
 .navigation-list {
   display: flex; /* Ensure list items are displayed inline */
+  justify-content: center;
 }
 
 /* Consider adjusting navigation styles for better visual appeal */
 .navigation a {
   /* Add space between navigation links (optional) */
   /* Other navigation link styles (color, font-weight, etc.) */
+  justify-self: center;
 }
 
 /* Responsive Design (Optional) */
@@ -34,6 +36,7 @@ w/* Keep existing styles (optional) */
   /* Styles for smaller screens (e.g., mobile) */
   .header {
     /* Adjust header layout for mobile if needed */
+    display: flex;
   }
   /* Adjust navigation styles for mobile if needed */
 }
@@ -43,7 +46,7 @@ body {
   margin: 0; /* Remove default margin from body */
   min-height: 100vh; /* Set minimum height to viewport height */
   display: flex; /* Allow stacking content vertically */
-  flex-direction: column; /* Stack content top to bottom */
+  flex-direction: row; /* Stack content top to bottom */
 }
 
 .App {
@@ -51,10 +54,7 @@ body {
   flex: 1; /* Allow main content to fill available space */
 }
 
-.footer{
-  width: 100%;
 
-}
 
 .main-content {
     top: 0; /* or whatever position is desired */

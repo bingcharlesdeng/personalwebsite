@@ -1,7 +1,6 @@
 /* About section styles */
 .about-section {
   padding: 40px;
-  max-width: 700px; /* Adjust as needed */
   margin: 0 auto; /* Center the section horizontally */
   font-family: Arial, sans-serif;
 }

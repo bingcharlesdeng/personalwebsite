@@ -5,7 +5,7 @@ import AboutMeText from './aboutMeText.js'; // Import the new component
 import './AboutMe.css';
 
 function AboutMe() {
-  const profilePicLink = useImagePath("profilePic2.jpg");
+  const profilePicLink = useImagePath("profilePic3.jpg");
 
   return (
     <section className="about-me">

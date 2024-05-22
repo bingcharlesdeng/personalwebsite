@@ -10,10 +10,9 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
-     
+    <Router className="entire-app">
       <div className="main-content"> {/* Wrap main content */}
-     <Header /> {/* Render Header component */}
+        <Header /> 
 
       <Routes>
         {['/home', '/personalwebsite', '/'].map(path => <Route path={path} element={<Home />} />)}
