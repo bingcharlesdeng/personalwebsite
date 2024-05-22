@@ -9,6 +9,7 @@
   padding: 0 2rem; /* Remove top/bottom padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: all 0.2s ease-in-out; /* Add transition for smooth changes */
+  width: 100%;
 }
 
 /* Logo or Title Styling */

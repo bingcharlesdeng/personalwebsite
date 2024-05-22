@@ -180,7 +180,7 @@ p {
 @media (max-device-width: 480px) {
   .home-hero,
   .home-contact {
-    display: grid; /* Hide Hero and Contact sections on small screens */
+    display: flex; /* Hide Hero and Contact sections on small screens */
   }
 
   .home-main {
@@ -192,8 +192,7 @@ p {
   .skills {  /* Include Skills component in media query */
     flex: 1 100%; /* Ensure full width and growth on mobile */
     margin: 0 auto;  /* Center the Skills component horizontally */
-    justify-content: center;
-    justify-items: center;
+    align-items: center;
     width: 100%;
   }
 }
