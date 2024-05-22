@@ -1,37 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for routing
-import './header.css'; // Import styles
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header className="header">
-      {/* Logo or Title */}
-      <div className="header-title">
-        {/* Optionally, add a website title or logo */}
-        {/* <img src={Logo} alt="Your Website Logo" className="logo" />  */}
-        {/* <h1>Your Website Title</h1> */}
-      </div>
-
-      {/* Navigation */}
+      <Link to="/" className="header-title">
+        {/* Add your website title or logo here */}
+        CBD
+      </Link>
       <nav className="navigation">
-        <ul className="navigation-list">
-          <li>
-            <Link to="/" className="nav-link">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className="nav-link">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="nav-link">
-              Contact
-            </Link>
-          </li>
-          {/* Add more links here */}
-        </ul>
+        {/* Added a new element for navigation links */}
+        <div className="navigation-links">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
       </nav>
     </header>
   );

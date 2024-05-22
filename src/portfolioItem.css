@@ -5,7 +5,7 @@
   display: inline-flex;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Responsive grid layout */
   gap: 20px;
-  justify-self: center ;
+  justify-content: center ;
 }
 
 .portfolio-item {

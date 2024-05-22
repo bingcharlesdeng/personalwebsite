@@ -1,17 +1,31 @@
-@base-color: #fff; 
-@text-color: #333; 
-@accent-color: #007bff; 
-
-.skills {
-  margin: 4rem 0;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: @base-color;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  list-style: none;
+/* Base styles */
+:root {
+  --base-color: #fff;
+  --text-color: #333;
+  --accent-color: #007bff;
 }
 
+/* Skills Section */
+.skills-section {
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: var(--base-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center; /* Center the text horizontally */
+  justify-items: space-between;
+}
+
+/* Skills Title (New element for separation) */
+.skills-title {
+  margin-bottom: 2rem; /* Add space below the title */
+  font-size: 1.8rem; /* Adjust title size for emphasis */
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Skills List */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -21,6 +35,7 @@
   justify-content: center;
 }
 
+/* Skill Item */
 .skill-item {
   width: calc(28% - 1.5rem);
   margin: 0.75rem;
@@ -32,7 +47,7 @@
   align-items: center;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  background-color: @base-color;
+  background-color: var(--base-color);
   position: relative;
 }
 
@@ -44,9 +59,10 @@
 .skill-item i {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: @text-color;
+  color: var(--text-color);
 }
 
+/* Skill Content */
 .skill-content {
   flex: 1;
 }
@@ -63,9 +79,12 @@
   line-height: 1.5;
 }
 
-.skill-info {
+/* Skill Details */
+.skill-details {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .skill-level {
@@ -73,59 +92,7 @@
   color: #aaa;
 }
 
-.skill-progress {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background-color: #ddd;
-  overflow: hidden;
-}
-
-.skill-progress .progress-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: @accent-color;
-  transition: width 0.5s ease-in-out;
-}
-
-.skill-item:hover .skill-progress .progress-bar {
-  width: 75%; /* Adjust hover progress bar width based on proficiency */
-}
-
-.project-list,
-.tool-list,
-.sample-list,
-.resource-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0;
-}
-
-.project-list li,
-.tool-list li,
-.sample-list li,
-.resource-list li {
-  margin-bottom: 0.3rem;
-}
-
-.project-list a,
-.sample-list a,
-.resource-list a {
-  color: @text-color;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.project-list a:hover,
-.sample-list a:hover,
-.resource-list a:hover {
-  color: @accent-color;
-}
-
+/* Optional Skill Level Colors */
 .skill-level.advanced {
   color: #28a745; /* Green for advanced level */
 }
@@ -138,24 +105,75 @@
   color: #f0ad4e; /* Orange-red for beginner level */
 }
 
+/* Lists within Skill Details */
+.project-list,
+.tool-list,
+.sample-list,
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5rem; /* Added some bottom margin */
+}
+
+.project-list li,
+.tool-list li,
+.sample-list li,
+.achievement-list li {
+  margin-bottom: 0.3rem;
+}
+
+.project-list a,
+.sample-list a,
+.achievement-list a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-list a:hover,
+.sample-list a:hover,
+.achievement-list a:hover {
+  color: var(--accent-color);
+}
+
+/* Sub-section Headings (h3) */
+.skill-details h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Convert to uppercase for emphasis */
+  color: var(--text-color);
+}
+
+/* Improved Readability for Long Descriptions */
+.skill-content p {
+  /* Adjust line-height and overflow for better handling of longer text */
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+/* Enriched Aesthetics (Optional) */
+
+/* Consider adding subtle borders or dividers to separate skill items */
+.skill-item {
+  border: 1px solid #ddd; /* Optional: Add a thin border */
+}
+
+/* Add a subtle hover effect for the entire skill item */
+.skill-item:hover {
+  background-color: #fafafa; /* Optional: Lighter background on hover */
+}
+
+/* You can further enhance the aesthetics with: */
+/* - Subdued background image or gradient for the skills section */
+/* - Font variations for headings and descriptions */
+/* - Subtle animations for hover effects or skill item appearance */
+
+/* Responsive Design (unchanged from your original skills.css) */
 @media (max-width: 768px) {
   .skill-item {
     width: calc(50% - 1.5rem); /* Adjust width for smaller screens */
   }
 }
 
-.make-border-radius(@radius) {
-  border-radius: @radius;
-}
-
-.skill-item {
-  @make-border-radius(5px); /* Apply border radius mixin */
-}
-
-@hover-transform: translateY(-3px);
-@hover-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-
-.skill-item:hover {
-  transform: @hover-transform;
-  box-shadow: @hover-shadow;
-}

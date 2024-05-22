@@ -3,48 +3,51 @@
   margin: 3rem auto;
   max-width: 900px;
   background-color: #f0f0f0; /* Light gray background with subtle texture */
-  padding: 2rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+  padding: 1.5rem; /* Reduce top/bottom padding for tighter layout */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtler drop shadow */
+  text-align: center;
 }
 
 /* Project Heading */
 .projects-heading {
   color: #222; /* Darker text color */
   text-align: center;
-  margin: 1rem 0;
+  margin: 0.5rem 0; /* Reduce top/bottom margin for tighter layout */
   font-family: 'Playfair Display', serif; /* Elegant heading font */
-  font-size: 2rem;
+  font-size: 1.8rem; /* Adjust heading size for better hierarchy */
   font-weight: bold;
   letter-spacing: 1px; /* Add slight letter spacing */
+  justify-content: center;
+  align-items: center;
 }
 
 /* Project Filters */
 .project-filters {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Improved spacing between filters */
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* Maintain some space below filters */
 }
 
 .project-filters label {
-  margin-right: 1rem;
+  margin-right: 0.5rem; /* Reduce spacing between label and dropdown */
   color: #666; /* Lighter text color for labels */
   font-family: 'Open Sans', sans-serif; /* Clean sans-serif font for labels */
-  font-size: 0.9rem;
+  font-size: 0.8rem; /* Slightly smaller font for labels */
   text-transform: uppercase; /* Convert labels to uppercase for emphasis */
 }
 
 /* Dropdown Menus (using .dropdown class) */
 .dropdown {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 0.5rem; /* Reduce spacing between dropdowns */
   border: none; /* Remove default border for a sleeker look */
   background: #eee; /* Light background for dropdowns */
-  padding: 0.75rem 1.25rem; /* Increase padding for dropdowns */
-  border-radius: 20px; /* Rounded corners with a larger radius */
+  padding: 0.5rem 1rem; /* Reduce padding for dropdowns */
+  border-radius: 10px; /* Rounded corners with a larger radius */
   cursor: pointer;
   font-family: 'Open Sans', sans-serif; /* Consistent font for dropdowns */
-  font-size: 0.9rem;
+  font-size: 0.8rem; /* Slightly smaller font for dropdowns */
   transition: background-color 0.2s ease-in-out; /* Smooth background transition */
 }
 
@@ -69,17 +72,18 @@
 /* Project Cards */
 .project {
   background-color: #fff; /* White background for cards */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Stronger box shadow for depth */
-  border-radius: 10px; /* Larger rounded corners for cards */
-  margin-bottom: 2rem;
-  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtler box shadow for depth */
+  border-radius: 5px; /* Reduce rounded corners for a more modern look */
+  margin-bottom: 1.5rem; /* Maintain some space between cards */
+  padding: 1rem; /* Reduce padding for tighter content spacing */
   display: flex;
   flex-direction: column; /* Stack content vertically */
   transition: transform 0.2s ease-in-out; /* Smooth hover animation */
+  position: relative; /* Required for hover effects on child elements */
 }
 
 .project:hover {
-  transform: translateY(-5px); /* More prominent upward movement on hover */
+  transform: translateY(-3px); /* Slightly less prominent upward movement on hover */
 }
 
 /* Project Image (assuming an "image" class) */
@@ -87,46 +91,38 @@
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Crop image to fit container */
-  margin-bottom: 1.5rem; /* Spacing below image */
-}
-
-/* Project Title */
-.project-title {
-  font-family: 'Playfair Display', serif; /* Consistent heading font for titles */
-  font-size: 1.3rem;
-  margin-bottom: 0.75rem; /* Smaller spacing below title */
-  color: #333; /* Darker text color for title */
+  margin-bottom: 0.75rem; 
 }
 
 /* Project Description */
 .project-description {
   font-family: 'Open Sans', sans-serif; /* Consistent font for descriptions */
-  font-size: 0.9rem; /* Slightly smaller font */
-  line-height: 1.6; /* Increased line spacing for readability */
+  font-size: 0.8rem; /* Slightly smaller font size for improved readability */
+  line-height: 1.4; /* Reduce line height slightly for tighter spacing */
   color: #666; /* Lighter text color for descriptions */
-  margin-bottom: 1rem; /* Spacing below description */
+  margin-bottom: 0.5rem; /* Reduce space below description */
 }
 
 /* Project Technologies/Accomplishments (assuming a "technologies" class) */
 .technologies {
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap */
-  margin-bottom: 1rem; /* Spacing below technologies */
+  margin-bottom: 0.5rem; /* Reduce space below technologies */
 }
 
 .technologies span {
-  background-color: #ddd; /* Light gray background for technology tags */
-  padding: 0.75rem 1rem; /* Increased padding for tags */
-  border-radius: 10px; /* Rounded corners with a larger radius */
-  margin-right: 0.75rem; /* Increased spacing between tags */
-  font-size: 0.8rem; /* Consistent font size for tags */
+  background-color: #eee; /* Lighter background color for tags */
+  padding: 0.5rem 0.75rem; /* Reduce padding for smaller tags */
+  border-radius: 5px; /* Reduce rounded corners for a more modern look */
+  margin-right: 0.5rem; /* Reduce space between tags */
+  font-size: 0.75rem; /* Smaller font size for tags */
   color: #333; /* Darker text color for tags */
   font-weight: bold; /* Bold text for emphasis */
   transition: background-color 0.2s ease-in-out; /* Smooth background transition */
 }
 
 .technologies span:hover {
-  background-color: #ccc; /* Slightly darker background on hover */
+  background-color: #ddd; /* Slightly darker background on hover */
 }
 
 /* Project Links (assuming an "links" class) */
@@ -134,6 +130,7 @@
   display: flex;
   justify-content: space-between; /* Align links horizontally */
   align-items: center;
+  margin-top: 0.5rem; /* Add some space above links */
 }
 
 .links a {
@@ -164,6 +161,58 @@
   }
 
   .project {
-    padding: 1.5rem; /* Reduce padding for smaller screens */
+    padding: 0.75rem; /* Reduce padding for smaller screens */
   }
+}
+
+/* Additional Enhancements (Optional) */
+
+.project:hover .project-title,
+.project:hover .project-description {
+  /* Add subtle hover effect for title and description (e.g., slightly bolder text) */
+  font-weight: bold;
+}
+
+.project-link {  /* Assuming a class for project links within cards */
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Set link color */
+  font-weight: bold; /* Make link text bold */
+  margin-top: auto; /* Align link to bottom of content */
+  /* Optional: Add hover effect for link (consider using a hover pseudo-class) */
+}
+
+.project-link:hover {
+  /* Add hover effect for links (e.g., slightly darker shade of blue) */
+  color: #0062cc;
+}
+
+/* Optional Styling Options */
+
+/* Option 1: Add a subtle border to project cards */
+.project {
+  border: 1px solid #ddd; /* Add a thin border */
+}
+
+/* Option 2: Change the hover effect for project cards to a slight opacity change */
+.project:hover {
+  opacity: 0.9; /* Reduce opacity slightly on hover */
+}
+
+/* Option 3: Add a button-like style to project links */
+.project-link {
+  background-color: #eee; /* Light background for links */
+  padding: 0.5rem 1rem;
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+  transition: background-color 0.2s ease-in-out; /* Smooth background transition */
+}
+
+.project-link:hover {
+  background-color: #ddd; /* Slightly darker background on hover */
+}
+
+/* Option 4: Add a hover effect with text underline for project titles */
+.project:hover .project-title {
+  text-decoration: underline; /* Add underline on hover */
 }

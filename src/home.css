@@ -18,6 +18,8 @@
   font-family: @base-font-family;
   margin: 0;
   padding: 0 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-header,
@@ -41,6 +43,7 @@ h1 {
   flex-direction: column;
   gap: 40px;
   flex-wrap: wrap;
+  text-align: center;
 
 }
 
@@ -52,13 +55,14 @@ h1 {
   font-family: @base-font-family;
   margin: 0;
   padding: 0 20px;
-  align-items: center; /* Center the entire home container horizontally */
 }
 
 /* Sections within the home container */
 .home-hero,
 .home-main,
-.home-contact {
+.home-contact,
+.home-project
+ {
   flex: 1; /* Allow growth but don't force full width */
   display: flex;
   justify-content: center; /* Center each section horizontally */
@@ -86,17 +90,7 @@ h1 {
   font-weight: bold;
 }
 
-/* Hero button styles */
-.hero-btn {
-  background-color: @primary-color;
-  color: @text-color;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.2s ease-in-out;
-}
+
 
 .hero-btn:hover {
   background-color: @accent-color;
@@ -116,14 +110,7 @@ h1 {
 }
 
 .about-me,
-.projects {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-  width: 100%; /* Ensure full width on all screens */
-}
+
 
 h2 {
   margin: 0;
@@ -136,11 +123,7 @@ p {
 }
 
 /* Contact section styles */
-.home-contact {
-  padding: 20px;
-  background-color: @secondary-color;
-  position: relative;
-}
+
 
 /* Responsive styles */
 

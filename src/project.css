@@ -1,74 +1,94 @@
 .project {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  margin-bottom: 10px; /* Adjust spacing as needed */
-  border: 1px solid #ddd; /* Add a subtle border */
-  border-radius: 5px; /* Add rounded corners */
-  padding: 15px; /* Add some padding inside the project */
-  text-align: left;
+  flex-direction: column;
+  margin-bottom: 2rem; /* Adjust spacing as needed */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px; /* Increase padding for content readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  /* Center the project horizontally */
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .project img {
-  width: 150px; /* Adjust image width as needed */
-  height: 150px; /* Maintain aspect ratio */
-  margin-bottom: 15px; /* Add space below image */
-  /* Optional: Center image within project */
-  align-self: center;
+  width: 100%; /* Allow images to fill available space */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1.5rem; /* Adjust spacing below image */
 }
 
 .project h3 {
-  margin: 0 0 10px 0; /* Adjust top and bottom margin */
-  font-size: 18px; /* Set font size for title */
+  margin: 0 0 15px 0; /* Adjust top and bottom margin */
+  font-size: 1.2rem; /* Set font size for title */
 }
 
 .project-description {
-  margin-bottom: 1.5rem; /* Add space below description */
+  margin-bottom: 1rem; /* Adjust space below description */
   line-height: 1.5; /* Increase line spacing for readability */
 }
 
+.project-content { /* Styles for project content area */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;  /* Add space between content sections */
+  padding: 1.5rem; /* Add padding for better visual separation */
+  background-color: #fff; /* Set a light background color */
+  border-radius: 5px; /* Add subtle rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 .project-info {
-  display: flex; /* Maintain flex for overall info container */
-  flex-direction: column; /* Stack technologies and accomplishments vertically */
-  margin-bottom: 1rem; /* Add space below info */
-}
-
-.technologies,
-.accomplishments {
-  list-style: none; /* Remove default list style */
+  display: flex;
+  flex-wrap: wrap; /* Allow info items to wrap on smaller screens */
+  margin-bottom: 1rem; /* Adjust space below info */
+  list-style: none; /* Remove default list style for clarity */
   padding: 0; /* Remove default padding */
-  margin-bottom: 5px; /* Add some space below each list */
+  font-size: 14px; /* Set font size for info labels and content */
 }
 
-.technologies li,
-.accomplishments li {
-  display: inline-block; /* Display list items inline */
-  margin-right: 10px; /* Add space between list items */
-  font-size: 14px; /* Set font size for list items */
-  color: #888; /* Set a lighter color for list items */
+.project-info li {
+  margin-right: 1rem; /* Add space between list items */
+  color: #333; /* Use a darker color for better contrast */
 }
 
-.project-meta {
-  display: flex;  /* Removed flex for meta info container */
-  margin-bottom: 5rem;
-  margin-left: 20rem;
+.info-label {
+  font-weight: bold; /* Make info labels bold */
+  margin-right: 5px; /* Add space between label and content */
 }
 
-.project-meta-right {
-  float: right; /* Simple right-alignment using float */
-  margin-left: 20px; /* Optional: Add some space between category and date */
-}
-
-.category,
-.date {
-  font-weight: bold; /* Make category and date labels bold */
-  font-size: 14px; /* Set font size for category and date */
-  color: #888; /* Set a lighter color for category and date */
+.project-meta { /* Styles for project meta information */
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  margin-bottom: 0; /* Remove bottom margin */
+  font-size: 13px; /* Set font size for meta info */
+  color: #888; /* Use a lighter color for meta info */
 }
 
 .project-link {
   text-decoration: none; /* Remove underline from link */
   color: #007bff; /* Set link color */
   font-weight: bold; /* Make link text bold */
-  text-align: left;
-  
+  margin-top: auto; /* Align link to bottom of content */
+  /* Optional: Add hover effect for link (consider using a hover pseudo-class) */
+}
+
+/* Media Queries for Responsive Design (Optional) */
+@media (min-width: 768px) {
+  .project {
+    flex-direction: row; /* Arrange image and content side-by-side on larger screens */
+    width: calc(50% - 1rem); /* Allow two projects per row with spacing */
+  }
+  .project img {
+    width: 40%; /* Adjust image width for side-by-side layout */
+  }
+  .project-content {
+    flex-grow: unset; /* Disable content growth on larger screens */
+  }
+}
+
+.project-container {  /* Styles for project container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally within container */
+  justify-content: center; /* Center content vertically within container */
 }

@@ -1,33 +1,45 @@
-w/* Keep existing styles (optional) */
+/* Keep existing styles (optional) */
 
 /* New styles for Header component */
 .header {
   display: flex; /* Enable flexbox for header layout */
-  justify-content: center; /* Space elements horizontally */
+  justify-content: space-around; /* Space elements horizontally */
+  align-items: center; /* Align header content vertically */
+  padding: 1rem; /* Add some padding for spacing */
+  background-color: #fff; /* Set a white background for the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .header-title {
-  /* Adjust styles for logo/title if needed (optional) */
-  display: flex;
-  justify-content: center;
+  font-size: 1.5rem; /* Increase title size */
+  font-weight: bold; /* Make title bolder */
+  text-decoration: none; /* Remove underline from title link */
+  color: #333; /* Set title color */
 }
 
 .navigation {
   display: flex; /* Keep navigation elements inline */
   list-style: none; /* Remove default list style */
-
+  margin: 0; /* Remove default margin */
 }
 
-.navigation-list {
-  display: flex; /* Ensure list items are displayed inline */
-  justify-content: center;
+/* Navigation styles for better visual appeal */
+.navigation-links {
+  display: flex; /* Make links inline */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
 
-/* Consider adjusting navigation styles for better visual appeal */
-.navigation a {
-  /* Add space between navigation links (optional) */
-  /* Other navigation link styles (color, font-weight, etc.) */
-  justify-self: center;
+.navigation-links a {
+  padding: 0.5rem 1rem; /* Add padding for links */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+  font-weight: bold; /* Make links bolder */
+  transition: all 0.2s ease-in-out; /* Add hover effect */
+}
+
+.navigation-links a:hover {
+  color: #666; /* Change link color on hover */
 }
 
 /* Responsive Design (Optional) */
@@ -35,36 +47,42 @@ w/* Keep existing styles (optional) */
 @media (max-width: 768px) {
   /* Styles for smaller screens (e.g., mobile) */
   .header {
-    /* Adjust header layout for mobile if needed */
-    display: flex;
+    flex-direction: column; /* Stack header content vertically on mobile */
+    align-items: center; /* Center content vertically on mobile */
   }
-  /* Adjust navigation styles for mobile if needed */
+
+  .navigation {
+    display: none; /* Hide navigation on small screens initially */
+  }
+
+  /* Add a hamburger menu button (optional) */
+  .header-menu-button {
+    display: block; /* Show hamburger menu button on small screens */
+    cursor: pointer; /* Make it look clickable */
+    font-size: 1.5rem; /* Adjust font size for menu button */
+  }
 }
 
 body {
-  /* Existing styles (if any) */
   margin: 0; /* Remove default margin from body */
-  min-height: 100vh; /* Set minimum height to viewport height */
-  display: flex; /* Allow stacking content vertically */
-  flex-direction: row; /* Stack content top to bottom */
+  font-family: Arial, sans-serif; /* Set a clean and readable font */
+  background-color: #f5f5f5; /* Add a light background color */
 }
 
 .App {
-  /* Existing styles (if any) */
-  flex: 1; /* Allow main content to fill available space */
+  display: flex; /* Allow stacking content vertically */
+  flex-direction: column; /* Stack content top to bottom */
+  min-height: 100vh; /* Set minimum height to viewport height */
 }
-
-
 
 .main-content {
-    top: 0; /* or whatever position is desired */
-    left: 0;
-    right: 0;
-    height: 0;
-    /* center all inline content */
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row
+  flex: 1; /* Allow main content to fill available space */
+  padding: 2rem; /* Add some padding for main content */
 }
 
+/* Remove unnecessary styles */
+.main-content {
+  text-align: center; /* Remove unnecessary text-align */
+  list-style:none;
+  justify-content: center;
+}
