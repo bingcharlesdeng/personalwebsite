@@ -27,7 +27,7 @@ export const projects = [
     technologies: ['Communication', 'Teamwork', 'Customer Service'], // No specific technologies used, so focus on skills
     accomplishments: ['Developed strong communication and interpersonal skills', 'Provided excellent customer service in a high-pressure environment'],
     category: 'Work Experience', // New category for non-tech projects
-    date: new Date('2023-08-01'), // Update with your start date at Chipotle
+    date: new Date('2024-5-01'), // Update with your start date at Chipotle
   },
   {
     title: 'Becoming an Influencer & Inspirational Videos',
