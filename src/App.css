@@ -3,7 +3,7 @@
 /* New styles for Header component */
 .header {
   display: flex; /* Enable flexbox for header layout */
-  justify-content: space-around; /* Space elements horizontally */
+  justify-content: center; /* Space elements horizontally */
   align-items: center; /* Align header content vertically */
   padding: 1rem; /* Add some padding for spacing */
   background-color: #fff; /* Set a white background for the header */
@@ -15,12 +15,14 @@
   font-weight: bold; /* Make title bolder */
   text-decoration: none; /* Remove underline from title link */
   color: #333; /* Set title color */
+
 }
 
 .navigation {
   display: flex; /* Keep navigation elements inline */
   list-style: none; /* Remove default list style */
   margin: 0; /* Remove default margin */
+
 }
 
 /* Navigation styles for better visual appeal */
@@ -52,7 +54,7 @@
   }
 
   .navigation {
-    display: none; /* Hide navigation on small screens initially */
+    display: flex; /* Hide navigation on small screens initially */
   }
 
   /* Add a hamburger menu button (optional) */
@@ -85,4 +87,5 @@ body {
   text-align: center; /* Remove unnecessary text-align */
   list-style:none;
   justify-content: center;
+  align-items: center;
 }
