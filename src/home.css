@@ -177,25 +177,7 @@ p {
 }
 
 /* Mobile screens (<= 480px) */
-@media (max-device-width: 480px) {
-  .home-hero,
-  .home-contact {
-    display: flex; /* Hide Hero and Contact sections on small screens */
-  }
 
-  .home-main {
-    gap: 20px; /* Reduce spacing between sections */
-  }
-  .hero
-  .about-me,
-  .projects,
-  .skills {  /* Include Skills component in media query */
-    flex: 1 100%; /* Ensure full width and growth on mobile */
-    margin: 0 auto;  /* Center the Skills component horizontally */
-    align-items: center;
-    width: 100%;
-  }
-}
 
 /* Default iPad screens (device-width: 768px) */
 @media (device-width: 768px) {
