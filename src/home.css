@@ -41,8 +41,7 @@ h1 {
   flex-direction: column;
   gap: 40px;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .home {
@@ -149,13 +148,13 @@ p {
 @media (min-width: 960px) {
   .home-main {
     flex-direction: row; /* Change to row for horizontal layout */
-    justify-content: space-between; /* Distribute content with some spacing */
+    justify-content: center; /* Distribute content with some spacing */
   }
 
   .about-me,
   .projects {
     flex: 1; /* Allow sections to grow and shrink proportionally */
-    max-width: 45%; /* Set a maximum width to prevent excessive stretching */
+   
   }
 }
 
@@ -170,7 +169,7 @@ p {
 
   .about-me,
   .projects {
-    max-width: 40%; /* Adjust section width to create more breathing room */
+   /* Adjust section width to create more breathing room */
     padding: 30px; /* Increase padding for a more comfortable reading experience */
   }
 
@@ -198,13 +197,13 @@ p {
 @media (max-device-width: 480px) {
   .home-hero,
   .home-contact {
-    display: flex /* Hide Hero and Contact sections on small screens */
+    display: grid; /* Hide Hero and Contact sections on small screens */
   }
 
   .home-main {
     gap: 20px; /* Reduce spacing between sections */
   }
-
+  .hero
   .about-me,
   .projects,
   .skills {  /* Include Skills component in media query */
@@ -243,13 +242,13 @@ p {
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   .home-main {
     flex-direction: row; /* Change to row for horizontal layout on landscape tablets */
-    justify-content: space-between; /* Distribute content with some spacing */
+    justify-content: center; /* Distribute content with some spacing */
   }
 
   .about-me,
   .projects {
     flex: 1; /* Allow sections to grow and shrink proportionally */
-    max-width: 45%; /* Set a maximum width to prevent excessive stretching */
+    min-width: 45%; /* Set a maximum width to prevent excessive stretching */
     font-size: 1rem; /* Adjust font size for better readability */
   }
 

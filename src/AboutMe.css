@@ -21,14 +21,17 @@
   line-height: 1.5;
   font-size: 16px;
   text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .about-me__profile-pic {
-  display: block;
+  display: grid;
   margin: 0 auto 1rem;
-  width: 150px;
-  height: 150px;
   border-radius: 50%;
+  width: 25rem;
+  height:15rem;
+
 }
 
 .about-me__links {

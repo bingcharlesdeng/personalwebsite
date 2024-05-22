@@ -3,6 +3,7 @@
 @accent-color: #007bff; 
 
 .skills {
+  margin: 4rem 0;
   padding: 20px;
   border-radius: 5px;
   background-color: @base-color;
@@ -97,8 +98,7 @@
 .project-list,
 .tool-list,
 .sample-list,
-.resource-list 
-.accomplishments{
+.resource-list {
   list-style: none;
   padding: 0;
   margin: 0.5rem 0;
