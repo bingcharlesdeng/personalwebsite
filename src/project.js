@@ -20,7 +20,7 @@ function Project(projectData) {
   return (
     <article className="project">  {/* Use <article> for semantic structure */}
       <div className="project-container"> {/* Wrap project content in a container */}
-        <div className="project-image">
+        <div className="project-img">
           {images.length > 1 ? (
             <ImageCarousel images={images} /> // Render ImageCarousel for multiple images
           ) : (

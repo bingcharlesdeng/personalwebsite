@@ -8,6 +8,7 @@
 .image-container {
   display: flex; /* Arrange images horizontally */
   width: 100%; /* Ensure container fills carousel width */
+  transition: transform 0.5s ease-in-out; /* Smooth image transition */
 }
 
 .carousel-image {
@@ -15,18 +16,23 @@
   object-fit: cover; /* Crop images to fit container */
 }
 
+/* Improved button styles for better UX */
 .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%); /* Center buttons vertically */
-  z-index: 2; /* Ensure buttons appear above images */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 0; /* Remove default padding for cleaner look */
+  width: 40px; /* Set fixed button width */
+  height: 40px; /* Set fixed button height */
+  border-radius: 50%; /* Rounded button style */
+  background-color: #333; /* Darker background color */
   color: white; /* White text color */
-  border: none;
-  padding: 10px;
   cursor: pointer;
-  opacity: 0.7; /* Slightly transparent on default */
+  opacity: 0.5; /* Slightly transparent on default */
   transition: opacity 0.2s ease-in-out; /* Smooth opacity change on hover */
+  display: flex; /* Allow for centering content */
+  justify-content: center; /* Center button content horizontally */
+  align-items: center; /* Center button content vertically */
 }
 
 .carousel-button:hover {
@@ -34,9 +40,9 @@
 }
 
 .carousel-button.prev {
-  left: 0; /* Position left button */
+  left: 10px; /* Position left button with some margin */
 }
 
 .carousel-button.next {
-  right: 0; /* Position right button */
+  right: 10px; /* Position right button with some margin */
 }

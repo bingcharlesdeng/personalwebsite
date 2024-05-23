@@ -13,6 +13,7 @@ function App() {
     <Router>
       <Header /> {/* Header component */}
       <div className="main-content"> {/* Wrap main content */}
+     {/* Header component */}
         <Routes>
           <Route path="/" element={<Home />} /> {/* Home route */}
           <Route path="/about" element={<About />} /> {/* About route */}

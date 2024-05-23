@@ -1,0 +1,21 @@
+/* Option component styles */
+.option {
+  /* Inherit font properties from parent element (likely select) */
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit; /* Inherit text color from parent */
+  padding: 0.5rem 1rem; /* Add some padding for readability */
+  cursor: pointer; /* Indicate interactivity for options */
+  transition: background-color 0.2s ease-in-out; /* Smooth background transition on hover */
+}
+
+.option:hover {
+  /* Slightly darker background on hover for better selection indication */
+  background-color: #eee; /* Adjust based on parent background */
+}
+
+.option[disabled] {
+  /* Style disabled options (optional) */
+  cursor: default; /* Remove hover interaction for disabled options */
+  opacity: 0.5; /* Reduce opacity for disabled options */
+}

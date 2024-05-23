@@ -1,15 +1,16 @@
-import React, { useState, useMemo } from 'react';
-import Project from './project'; // Import Project component (updated)
-import { projects } from './projectList'; // Import projects data
-import Option from './option'; // Import Option component
+import React from 'react';
+import { useState, useMemo } from 'react';
+import Project from './project'; // Import Project component
 import "./projects.css";
 
-function Projects() {
-  const [selectedFilter, setSelectedFilter] = useState('all'); // Initial filter state
-  const [sortedProjects, setSortedProjects] = useState(projects.slice()); // Initially unsorted copy of projects
-  const [selectedSort, setSelectedSort] = useState(''); // Initial sort selection (default to none)
+// Import projects data (assuming it's in a separate file)
+import { projects } from './projectList';
 
-  // Use useMemo to create unique categories (avoiding duplicates)
+function Projects() {
+  const [selectedFilter, setSelectedFilter] = useState('all');
+  const [sortedProjects, setSortedProjects] = useState(projects.slice());
+  const [selectedSort, setSelectedSort] = useState('');
+
   const uniqueCategories = useMemo(() => {
     const categorySet = new Set();
     projects.forEach((project) => categorySet.add(project.category));
@@ -24,7 +25,7 @@ function Projects() {
     setSortedProjects(filteredProjects);
   };
 
-  const handleSortChange = (sortOption) => { // Receive sortOption as argument
+  const handleSortChange = (sortOption) => {
     setSelectedSort(sortOption);
     let sortedProjects = [...projects]; // Initialize sortedProjects with the projects array
     switch (sortOption) {
@@ -49,34 +50,38 @@ function Projects() {
   return (
     <section className="projects">
       <h2 className="projects-heading">Projects</h2>
-      <div className="project-filters">
+      <div className='project-helper'>
+      <div className="project-filters"> {/* Plural for consistency with CSS */}
         <label htmlFor="filter">Filter by Category:</label>
-        <select
-          id="filter"
-          value={selectedFilter}
-          onChange={handleFilterChange}
-        >
-          <Option value="">All</Option>
-          {/* Use Option component for category options with unique categories */}
+        <select id="filter" value={selectedFilter} onChange={handleFilterChange}>
+          <option value="">All</option>
           {uniqueCategories.map((category) => (
-            <Option key={category} value={category}>
+            <option key={category} value={category}>
               {category}
-            </Option>
+            </option>
           ))}
         </select>
+        <span className="label-space">
         <label htmlFor="sort">Sort by:</label>
+        </span>
         <select id="sort" value={selectedSort} onChange={(e) => handleSortChange(e.target.value)}>
-          <Option value="">None</Option>
-          <Option value="newest">Newest First</Option>
-          <Option value="oldest">Oldest First</Option>
-          <Option value="name-asc">Name (A-Z)</Option>
-          <Option value="name-desc">Name (Z-A)</Option>
+          <option value="">None</option>
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="name-asc">Name (A-Z)</option>
+          <option value="name-desc">Name (Z-A)</option>
         </select>
       </div>
-      <p className="project-description">Here are some of the projects I've been working on:</p>
-      {sortedProjects.map((project) => (
-        <Project key={project.title} {...project} /> // Pass project data to Project component
-      ))}
+
+      {sortedProjects.length > 0 ? ( // Render description only if projects exist
+        <p className="project-description">Here are some of the projects I've been working on:</p>
+      ) : null}
+      <div className="project-container"> {/* Added container for spacing */}
+        {sortedProjects.map((project) => (
+          <Project key={project.title} {...project} />
+        ))}
+      </div>
+      </div>
     </section>
   );
 }

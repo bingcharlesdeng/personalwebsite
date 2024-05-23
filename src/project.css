@@ -12,6 +12,9 @@
   width: fit-content;
 }
 
+.project img {
+    width: 40%; /* Adjust image width for side-by-side layout */
+  }
 /* Project Image (Centered) */
 
 /* Project Content */

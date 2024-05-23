@@ -17,12 +17,12 @@ const Contact = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/charlesxdeng" onClick={() => handleSocialClick('https://www.linkedin.com/in/charlesxdeng/')} target="_blank">
+          <a href="https://www.linkedin.com/in/charlesxdeng" onClick={() => handleSocialClick('https://www.linkedin.com/in/charlesxdeng/')} >
             LinkedIn
           </a>
         </li>
         <li>
-          <a href="https://github.com/bingcharlesdeng" onClick={() => handleSocialClick('https://github.com/bingcharlesdeng')} target="_blank">
+          <a href="https://github.com/bingcharlesdeng" onClick={() => handleSocialClick('https://github.com/bingcharlesdeng')} >
             Github
           </a>
         </li>

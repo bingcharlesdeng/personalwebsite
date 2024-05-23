@@ -212,7 +212,7 @@ p {
   .about-me,
   .projects {
     flex: 1; /* Allow sections to grow and shrink proportionally */
-    min-width: 45%; /* Set a maximum width to prevent excessive stretching */
+    max-width: 45%; /* Set a maximum width to prevent excessive stretching */
     font-size: 1rem; /* Adjust font size for better readability */
   }
 

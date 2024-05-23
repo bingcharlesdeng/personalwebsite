@@ -4,7 +4,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="headers">
       <Link to="/" className="header-title">
         {/* Add your website title or logo here */}
   

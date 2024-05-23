@@ -1,63 +1,86 @@
-@base-color: #f5f5f5; 
-@text-color: #333; 
-@accent-color: #007bff; 
+/* Base colors */
+:root {
+  --base-color: #f5f5f5;
+  --text-color: #333;
+  --accent-color: #007bff;
+}
 
+/* Contact Section */
 .contact {
-  margin: 0 auto;
+  margin: 3rem auto; /* Adjust top/bottom margin for better spacing */
   padding: 2rem;
-
-  background-color: @base-color;
+  background-color: var(--base-color);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
-  align-items: center;
-  margin-left: 22.5%
+  text-align: center;
 }
 
 .contact h2 {
   margin-bottom: 1.5rem;
-  font-size: 2rem; /* Increase heading size */
-  text-align: center;
+  font-size: 1.8rem; /* Adjust heading size for better hierarchy */
+  color: var(--text-color);
 }
 
 .contact p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* Reduce paragraph bottom margin for more compact layout */
   font-size: 1rem;
   line-height: 1.5;
-  text-align: center;
+  color: var(--text-color);
 }
 
+/* Contact List */
 .contact-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  display: flex; /* Arrange social links horizontally */
+  justify-content: center; /* Center links horizontally */
+  margin-top: 1rem; /* Add some space above the list */
 }
 
 .contact-list li {
-  margin-bottom: 1rem;
-  display: inline-block; /* Display social links inline */
+  margin: 0 1rem; /* Add spacing between list items */
   transition: all 0.2s ease-in-out;
 }
 
 .contact-list li a {
-  color: @text-color;
+  color: var(--text-color);
   text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem; /* Adjust padding for spacing */
+  font-weight: bold; /* Use bold text for emphasis */
+  padding: 0.75rem 1rem; /* Increase padding for better readability */
   border: 1px solid transparent; /* Border on hover */
   border-radius: 5px;
 }
 
 .contact-list li a:hover {
-  color: @accent-color; /* Blue hover color */
-  background-color: lighten(@base-color, 5%); /* Light background on hover with LESS function */
-  border-color: #ddd; /* Border color on hover */
+  color: var(--accent-color);
+  background-color: lighten(var(--base-color), 5%);
+  border-color: #ddd;
 }
 
+/* Placeholder for social icon (replace with actual icon styles) */
 .contact-list li:nth-child(3) a::before {
-  content: ""; /* Placeholder for icon content */
-  display: flex;
+  content: ""; /* Placeholder content for icon */
+  display: inline-flex; /* Inline for better alignment */
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle; /* Align with text */
+  background-color: #ddd; /* Placeholder background color */
+  border-radius: 50%;
+}
+.contact-list li:nth-child(2) a::before {
+  content: ""; /* Placeholder content for icon */
+  display: inline-flex; /* Inline for better alignment */
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle; /* Align with text */
+  background-color: #ddd; /* Placeholder background color */
+  border-radius: 50%;
+}
+.contact-list li:nth-child(1) a::before {
+  content: ""; /* Placeholder content for icon */
+  display: inline-flex; /* Inline for better alignment */
   width: 1.5rem;
   height: 1.5rem;
   vertical-align: middle; /* Align with text */
